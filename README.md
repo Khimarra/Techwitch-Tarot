@@ -7,10 +7,10 @@
 <https://rws-cards-api.herokuapp.com/>
 
 ## API Snippet:
-![JSON Snippet](https://imgur.com/ilAs4uB.jpg)
+![JSON Snippet](https://res.cloudinary.com/dxvcs5ehh/image/upload/v1577993116/JSON_Snippet_kcufzx.jpg)
 
 ## Wireframes:
-![Wireframes](https://imgur.com/a/EwvDRQO)
+![Wireframes](https://res.cloudinary.com/dxvcs5ehh/image/upload/v1577992837/Wireframes_kyqvdt.jpg)
 
 ## MVP:
 - Use RWS Tarot API to generate random tarot cards
@@ -39,3 +39,6 @@
 |Jan 7th| Initial Clickable Model  | Incomplete
 |Jan 8th| MVP | Incomplete
 |Jan 9th| Present | Incomplete
+
+## Priority Matrix:
+![Priority-Matrix](https://res.cloudinary.com/dxvcs5ehh/image/upload/v1577992837/Priority_Matrix_bud7qp.jpg)
