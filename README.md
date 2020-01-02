@@ -7,10 +7,10 @@
 <https://rws-cards-api.herokuapp.com/>
 
 ## API Snippet:
-![JSON Snippet](https://imgur.com/ilAs4uB)
+![JSON Snippet](https://imgur.com/ilAs4uB.jpg)
 
 ## Wireframes:
-    [insert screenshot]
+![Wireframes](https://imgur.com/a/EwvDRQO.jpg)
 
 ## MVP:
 - Use RWS Tarot API to generate random tarot cards
