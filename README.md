@@ -10,7 +10,7 @@
 ![JSON Snippet](https://imgur.com/ilAs4uB.jpg)
 
 ## Wireframes:
-![Wireframes](https://imgur.com/a/EwvDRQO.jpg)
+![Wireframes](https://imgur.com/a/EwvDRQO)
 
 ## MVP:
 - Use RWS Tarot API to generate random tarot cards
