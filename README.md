@@ -42,3 +42,18 @@
 
 ## Priority Matrix:
 ![Priority-Matrix](https://res.cloudinary.com/dxvcs5ehh/image/upload/v1577992837/Priority_Matrix_bud7qp.jpg)
+
+## API Data Sample:
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Building HTML | H | 4hrs | 0hrs | 0hrs |
+| Working with API | H | 4hrs | 0hrs | 0hrs |
+| Adding card images | H | 5hrs | 0hrs | 0hrs |
+| Styling with 2+ media queries | H | 6hrs | 0hrs | 0hrs |
+| Adding local storage | M | 2hrs | 0hrs | 0hrs |
+| Card flip animation | M | 5hrs? | 0hrs | 0hrs |
+| Adding additional card info | M | 3hrs | 0hrs | 0hrs |
+| Adding card library | M | 5hrs | 0hrs | 0hrs |
+| Adding search bar | L | 3hrs | 0hrs | 0hrs |
+| Total | H | 37hrs| 0hrs | 0hrs |
+
