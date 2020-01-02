@@ -18,9 +18,9 @@
 - Cards (78 in a deck) are randomly generated each time page is reloaded
 - CSS to make the page look nice
 - Appropriate image displayed for each card
+- Responsive design with at least 2 media queries
 
 ## Post-MVP:
-- Responsive design with at least 2 media queries
 - Cards start with backs up, flip when user clicks them
 - Card flip animation
 - Full RWS description of card, not just meanings
