@@ -1,3 +1,29 @@
 body {
-    
+    background: slateblue;
+    margin: none;
+    padding: none;
+}
+
+header {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 300%;
+    text-align: center;
+    height: 200px;
+    background-image: url("images/tarot-stock.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div {
+    /* placeholder height and width to simulate card size. replace with % once actual card images are in place */
+    height: 19.77rem;
+    width: 12rem;
+    background: steelblue;
 }
