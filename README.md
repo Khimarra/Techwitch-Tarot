@@ -43,7 +43,7 @@
 ## Priority Matrix:
 ![Priority-Matrix](https://res.cloudinary.com/dxvcs5ehh/image/upload/v1577992837/Priority_Matrix_bud7qp.jpg)
 
-## API Data Sample:
+## Timeframes:
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Building HTML | H | 4hrs | 0hrs | 0hrs |
