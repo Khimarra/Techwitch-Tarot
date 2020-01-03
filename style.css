@@ -1,6 +1,8 @@
 body {
     font-family: 'Fondamento', cursive;
-    background: rgb(138, 138, 138);
+    color: rgb(212, 212, 212);
+    text-shadow: 0 0 20px white;
+    background: rgb(58, 52, 52);
     margin: 0;
     padding: none;
 }
@@ -20,8 +22,9 @@ h1 {
     font-size: 10vw;
     margin: 0;
     padding-top: 5vw;
-    color: rgb(0, 170, 231);
-    text-shadow: .6vw .6vw .5vw rgba(37, 42, 46, .9);
+    /* color: rgb(0, 170, 231); */
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ce2dff, 0 0 30px #2db2ff, 0 0 40px #2db2ff, 0 0 50px #2db2ff, 0 0 75px #2db2ff;
 }
 
 
@@ -31,8 +34,7 @@ h1 {
 .spread {
     height: 70vw;
     background-image: url("images/ClothBackground.jpg");
-    opacity: .7;
-    box-shadow: 0 .5vw 1vw rgba(52, 71, 87, .5);
+    box-shadow: 0 0 5px rgb(255, 30, 60), 0 0 15px rgb(255, 30, 60), 0 0 25px black, 0 0 50px black, 0 0 75px black;
 }
 
 .cardSpread {
@@ -44,8 +46,8 @@ h1 {
 
 .cardPosition {
     font-size: 3vw;
-    color: rgb(255, 227, 134);
-    text-shadow: .4vw .4vw .5vw rgba(37, 42, 46, .9);
+    color: rgb(255, 244, 209);
+    text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
