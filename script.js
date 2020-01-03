@@ -4,8 +4,7 @@ const deckUrl = 'https://rws-cards-api.herokuapp.com/api/v1/cards'
 
 const reverseDeckUrl = 'https://rws-cards-api.herokuapp.com/api/v1/cards/search?meaning=difficult'
 
-let cityInput = document.querySelector('#city')
-let citySubmit = document.querySelector('#getTemp')
+let card = document.querySelector(".card");
 
 async function showCards() {
     try {
@@ -19,3 +18,20 @@ async function showCards() {
 }
 
 showCards()
+
+// let card = document.querySelector('.card')
+
+// document.querySelector('.cardContainer').onClick = function() {
+//     if (card.classList.contains('isFlipped')) {
+//         card.classList.remove('isFlipped')
+//     }
+// }
+
+
+document.querySelector(".cardContainer").onclick = function() {
+  if (card.classList.contains("isFlipped")) {
+    card.classList.remove("isFlipped")
+  } else {
+    card.classList.add("isFlipped")
+  }
+}

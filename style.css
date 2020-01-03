@@ -44,7 +44,7 @@ section {
 
 /* ------ making first card flip ------ */
 
-.cardOne {
+.cardContainer {
     background-color: transparent;
     height: 20.85rem;
     width: 12rem;
@@ -52,33 +52,39 @@ section {
     perspective: 1000px;
 }
 
-.cardOneInner {
+.card {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
+    transition: transform 0.6s;
     transform-style: preserve-3d;
 }
 
-.cardOne:hover .cardOneInner {
+.card:hover {
+    transform: rotateY(-30deg);
+} /* this tilts the card prior to flipping */
+
+
+.card.isFlipped {
     transform: rotateY(180deg);
 }
 
-.cardOneFront, .cardOneBack {
+.cardFace {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
 }
 
-.cardOneFront {
-    background-color: #bbb;
-    color: black;
-}
-
-.cardOneBack {
+.up {
     background-color: cyan;
     color: white;
     transform: rotateY(180deg);
 }
+
+.down {
+    background-color: #bbb;
+    color: black;
+}
+
