@@ -13,8 +13,10 @@ const card = document.querySelectorAll('.card')
 async function showCards() {
     try {
         let getCards = await axios.get(deckUrl)
-
-        console.log(getCards.data.cards[1].name)
+        let totalCards = 77
+        let cardInfo = getCards.data.cards[Math.floor(Math.random() * Math.floor(totalCards))]
+        console.log(cardInfo.name)
+        console.log(cardInfo.meaning_up)
     } catch(err) {
         console.log(`Oops! Error occurred! ${err}`)
     }
@@ -23,6 +25,8 @@ async function showCards() {
 
 showCards()
 
+
+// learned how to make card flip on click from https://codepen.io/AdamTheWizard/pen/QVgLLR
 
 card.forEach(item => {
     item.addEventListener('click', function() {

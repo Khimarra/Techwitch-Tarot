@@ -53,7 +53,7 @@
 | Adding card images | H | 5hrs | 1.5hrs | 0hrs |
 | Styling with 2+ media queries | H | 6hrs | 2hrs | 0hrs |
 | Adding local storage | M | 2hrs | 0hrs | 0hrs |
-| Card flip animation | M | 5hrs? | 0hrs | 0hrs |
+| Card flip animation | M | 5hrs? | 2.5hrs | 0hrs |
 | Adding additional card info | M | 3hrs | 0hrs | 0hrs |
 | Adding card library | M | 5hrs | 0hrs | 0hrs |
 | Adding search bar | L | 3hrs | 0hrs | 0hrs |
