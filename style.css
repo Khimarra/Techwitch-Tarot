@@ -31,12 +31,54 @@ section {
     margin-top: 5rem;
 }
 
-div {
-    /* placeholder height and width to simulate card size. replace with % once actual card images are in place */
+/* div {
     height: 20.85rem;
     width: 12rem;
     background-image: url('cards/card-back.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 10px;
+} */
+
+
+
+/* ------ making first card flip ------ */
+
+.cardOne {
+    background-color: transparent;
+    height: 20.85rem;
+    width: 12rem;
+    border: 1px solid black;
+    perspective: 1000px;
+}
+
+.cardOneInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.cardOne:hover .cardOneInner {
+    transform: rotateY(180deg);
+}
+
+.cardOneFront, .cardOneBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.cardOneFront {
+    background-color: #bbb;
+    color: black;
+}
+
+.cardOneBack {
+    background-color: cyan;
+    color: white;
+    transform: rotateY(180deg);
 }
