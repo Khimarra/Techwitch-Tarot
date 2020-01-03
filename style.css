@@ -1,4 +1,5 @@
 body {
+    font-family: 'Fondamento', cursive;
     background: rgb(138, 138, 138);
     margin: 0;
     padding: none;
@@ -12,33 +13,54 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     position: inherit;
+    box-shadow: 0 2vw 2vw rgba(30, 42, 51, 0.8);
 }
 
 h1 {
-    font-family: 'Fondamento', cursive;
     font-size: 10vw;
     margin: 0;
     padding-top: 5vw;
-    color: rgb(0, 158, 217);
-    text-shadow: .8vw .8vw 1vw rgba(37, 42, 46, .9);
+    color: rgb(0, 170, 231);
+    text-shadow: .6vw .6vw .5vw rgba(37, 42, 46, .9);
 }
 
+
+
+/* ------ Tarot Spread ------ */
+/* probably need to use grid for this section */
 .spread {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 60vw;
+    height: 70vw;
     background-image: url("images/ClothBackground.jpg");
     opacity: .7;
     box-shadow: 0 .5vw 1vw rgba(52, 71, 87, .5);
 }
 
+.cardSpread {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cardPosition {
+    font-size: 3vw;
+    color: rgb(255, 227, 134);
+    text-shadow: .4vw .4vw .5vw rgba(37, 42, 46, .9);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h2 {
+    width: 25%;
+    text-align: center;
+}
+
+
 /* ------ making first card flip ------ */
 /* learned how to make the card flip with perspective and transform from https://www.w3schools.com/howto/howto_css_flip_card.asp */
-
 .cardContainer {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.3);
     height: 41.7vw;
     width: 24vw;
     /* border: 1px solid black; */
@@ -62,7 +84,6 @@ h1 {
     transform: rotateY(-30deg);
 } /* this tilts the card prior to flipping */
 
-
 .card.isFlipped {
     transform: rotateY(180deg);
 }
@@ -79,7 +100,6 @@ h1 {
     background-color: cyan;
     color: white;
     transform: rotateY(180deg);
-
 }
 
 .down {
