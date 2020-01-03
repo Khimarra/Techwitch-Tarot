@@ -11,7 +11,7 @@ async function showCards() {
     try {
         let getCards = await axios.get(deckUrl)
 
-        console.log(getCards)
+        console.log(getCards.data.cards[1].name)
     } catch(err) {
         console.log(`Oops! Error occurred! ${err}`)
     }

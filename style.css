@@ -1,17 +1,26 @@
 body {
-    background: slateblue;
-    margin: none;
+    background: rgb(138, 138, 138);
+    margin: 0;
     padding: none;
 }
 
 header {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 300%;
+    /* font-family: 'Shadows Into Light', cursive; */
     text-align: center;
     height: 200px;
     background-image: url("images/tarot-stock.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    position: inherit;
+}
+
+h1 {
+    font-family: 'Fondamento', cursive;
+    font-size: 500%;
+    margin: 0;
+    padding-top: 50px;
+    color: rgb(0, 158, 217);
+    text-shadow: 4px 4px 6px rgba(37, 42, 46, .7);
 }
 
 section {
@@ -19,11 +28,14 @@ section {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 5rem;
 }
 
 div {
     /* placeholder height and width to simulate card size. replace with % once actual card images are in place */
     height: 19.77rem;
     width: 12rem;
-    background: steelblue;
+    background-image: url('cards/card-back.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
