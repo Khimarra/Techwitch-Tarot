@@ -34,8 +34,8 @@
 ## Goals:
 |  Day | Deliverable | Status
 |---|---| ---|
-|Jan 2rd| Project Prompt and Approval | Incomplete
-|Jan 3rd| Wireframes, Priority Matrix, Whiteboarding | Incomplete
+|Jan 2rd| Project Prompt and Approval | Complete
+|Jan 3rd| Wireframes, Priority Matrix, Whiteboarding | Complete
 |Jan 4th| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Jan 6th| actual code, get cards generating randomly | Incomplete
 |Jan 7th| Initial Clickable Model  | Incomplete
@@ -48,14 +48,14 @@
 ## Timeframes:
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Building HTML | H | 4hrs | 0hrs | 0hrs |
-| Working with API | H | 4hrs | 0hrs | 0hrs |
-| Adding card images | H | 5hrs | 0hrs | 0hrs |
-| Styling with 2+ media queries | H | 6hrs | 0hrs | 0hrs |
+| Building HTML | H | 4hrs | 2hrs | 0hrs |
+| Working with API | H | 4hrs | .5hrs | 0hrs |
+| Adding card images | H | 5hrs | 1.5hrs | 0hrs |
+| Styling with 2+ media queries | H | 6hrs | 2hrs | 0hrs |
 | Adding local storage | M | 2hrs | 0hrs | 0hrs |
 | Card flip animation | M | 5hrs? | 0hrs | 0hrs |
 | Adding additional card info | M | 3hrs | 0hrs | 0hrs |
 | Adding card library | M | 5hrs | 0hrs | 0hrs |
 | Adding search bar | L | 3hrs | 0hrs | 0hrs |
-| Total | H | 37hrs| 0hrs | 0hrs |
+| Total | H | 37hrs| 6hrs | 0hrs |
 
