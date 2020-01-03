@@ -15,10 +15,10 @@
 ![Wireframes](https://res.cloudinary.com/dxvcs5ehh/image/upload/v1577992837/Wireframes_kyqvdt.jpg)
 
 ## MVP:
-- Use RWS Tarot API to generate random tarot cards
-- HTML page with 3 cards displayed and meanings underneath
-- Cards (78 in a deck) are randomly generated each time page is reloaded
-- CSS to make the page look nice
+- Use RWS Tarot API to generate random tarot cards - DONE
+- HTML page with 3 cards displayed and meanings underneath - DONE
+- Cards (78 in a deck) are randomly generated each time page is reloaded - DONE
+- CSS to make the page look nice - DONE
 - Appropriate image displayed for each card
 - Responsive design with at least 2 media queries
 
@@ -36,9 +36,9 @@
 |---|---| ---|
 |Jan 2rd| Project Prompt and Approval | Complete
 |Jan 3rd| Wireframes, Priority Matrix, Whiteboarding | Complete
-|Jan 4th| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Jan 4th| Core Application Structure (HTML, CSS, etc.) | Complete
 |Jan 6th| actual code, get cards generating randomly | Incomplete
-|Jan 7th| Initial Clickable Model  | Incomplete
+|Jan 7th| Initial Clickable Model (responsive)  | Incomplete
 |Jan 8th| MVP | Incomplete
 |Jan 9th| Present | Incomplete
 
@@ -49,7 +49,7 @@
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Building HTML | H | 4hrs | 2hrs | 0hrs |
-| Working with API | H | 4hrs | .5hrs | 0hrs |
+| Working with API | H | 4hrs | 1.5hrs | 0hrs |
 | Adding card images | H | 5hrs | 1.5hrs | 0hrs |
 | Styling with 2+ media queries | H | 6hrs | 2hrs | 0hrs |
 | Adding local storage | M | 2hrs | 0hrs | 0hrs |
@@ -57,5 +57,5 @@
 | Adding additional card info | M | 3hrs | 0hrs | 0hrs |
 | Adding card library | M | 5hrs | 0hrs | 0hrs |
 | Adding search bar | L | 3hrs | 0hrs | 0hrs |
-| Total | H | 37hrs| 6hrs | 0hrs |
+| Total | H | 37hrs| 10hrs | 0hrs |
 

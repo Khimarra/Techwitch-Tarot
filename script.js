@@ -14,13 +14,20 @@ async function showCards() {
     try {
         let getCards = await axios.get(deckUrl)
         let totalCards = 78
+
         let getCardOneInfo = getCards.data.cards[Math.floor(Math.random() * Math.floor(totalCards))]
         let cardOneInfo = document.querySelector('.cardOneInfo')
         cardOneInfo.innerHTML = ''
+
+        let getCardTwoInfo = getCards.data.cards[Math.floor(Math.random() * Math.floor(totalCards))]
         let cardTwoInfo = document.querySelector('.cardTwoInfo')
         cardTwoInfo.innerHTML = ''
+
+        let getCardThreeInfo = getCards.data.cards[Math.floor(Math.random() * Math.floor(totalCards))]
         let cardThreeInfo = document.querySelector('.cardThreeInfo')
         cardThreeInfo.innerHTML = ''
+
+        console.log(getCardOneInfo)
         console.log(getCardOneInfo.name)
         console.log(getCardOneInfo.meaning_up)
 
@@ -33,6 +40,24 @@ async function showCards() {
         cardOneMeaning.innerHTML = `Interpretation: ${getCardOneInfo.meaning_up}`
         cardOneInfo.append(cardOneMeaning)
 
+        // - Card Two
+        let cardTwoName = document.createElement('div')
+        cardTwoName.innerHTML = `Card: ${getCardTwoInfo.name}`
+        cardTwoInfo.append(cardTwoName)
+
+        let cardTwoMeaning = document.createElement('div')
+        cardTwoMeaning.innerHTML = `Interpretation: ${getCardTwoInfo.meaning_up}`
+        cardTwoInfo.append(cardTwoMeaning)
+
+        // - Card Three
+        let cardThreeName = document.createElement('div')
+        cardThreeName.innerHTML = `Card: ${getCardThreeInfo.name}`
+        cardThreeInfo.append(cardThreeName)
+
+        let cardThreeMeaning = document.createElement('div')
+        cardThreeMeaning.innerHTML = `Interpretation: ${getCardThreeInfo.meaning_up}`
+        cardThreeInfo.append(cardThreeMeaning)        
+
 
     } catch(err) {
         console.log(`Oops! Error occurred! ${err}`)
@@ -44,7 +69,7 @@ showCards()
 
 
 // learned how to make card flip on click from https://codepen.io/AdamTheWizard/pen/QVgLLR
-
+// might have to split this to do it for each card individually in order to get info to appear after click?
 card.forEach(item => {
     item.addEventListener('click', function() {
         if (item.classList.contains("isFlipped")) {
