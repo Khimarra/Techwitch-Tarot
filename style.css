@@ -33,9 +33,10 @@ section {
 
 div {
     /* placeholder height and width to simulate card size. replace with % once actual card images are in place */
-    height: 19.77rem;
+    height: 20.85rem;
     width: 12rem;
     background-image: url('cards/card-back.jpg');
     background-size: contain;
     background-repeat: no-repeat;
+    border-radius: 10px;
 }
