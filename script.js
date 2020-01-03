@@ -13,10 +13,27 @@ const card = document.querySelectorAll('.card')
 async function showCards() {
     try {
         let getCards = await axios.get(deckUrl)
-        let totalCards = 77
-        let cardInfo = getCards.data.cards[Math.floor(Math.random() * Math.floor(totalCards))]
-        console.log(cardInfo.name)
-        console.log(cardInfo.meaning_up)
+        let totalCards = 78
+        let getCardOneInfo = getCards.data.cards[Math.floor(Math.random() * Math.floor(totalCards))]
+        let cardOneInfo = document.querySelector('.cardOneInfo')
+        cardOneInfo.innerHTML = ''
+        let cardTwoInfo = document.querySelector('.cardTwoInfo')
+        cardTwoInfo.innerHTML = ''
+        let cardThreeInfo = document.querySelector('.cardThreeInfo')
+        cardThreeInfo.innerHTML = ''
+        console.log(getCardOneInfo.name)
+        console.log(getCardOneInfo.meaning_up)
+
+        // - Card One
+        let cardOneName = document.createElement('div')
+        cardOneName.innerHTML = `Card: ${getCardOneInfo.name}`
+        cardOneInfo.append(cardOneName)
+
+        let cardOneMeaning = document.createElement('div')
+        cardOneMeaning.innerHTML = `Interpretation: ${getCardOneInfo.meaning_up}`
+        cardOneInfo.append(cardOneMeaning)
+
+
     } catch(err) {
         console.log(`Oops! Error occurred! ${err}`)
     }
