@@ -10,6 +10,8 @@ const card = document.querySelectorAll('.card')
 // const cardTwo = document.querySelector('.two')
 // const cardThree = document.querySelector('.three')
 
+
+
 async function showCards() {
     try {
         let getCards = await axios.get(deckUrl)
@@ -27,6 +29,7 @@ async function showCards() {
         let cardThreeInfo = document.querySelector('.cardThreeInfo')
         cardThreeInfo.innerHTML = ''
 
+        console.log(getCards.data.cards)
         console.log(getCardOneInfo)
         console.log(getCardOneInfo.name)
         console.log(getCardOneInfo.meaning_up)

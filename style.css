@@ -1,7 +1,7 @@
 body {
     font-family: 'Fondamento', cursive;
-    color: rgb(212, 212, 212);
-    text-shadow: 0 0 20px white;
+    color: white;
+    text-shadow: 0 0 10px white, 0 0 20px #2db2ff;
     background: rgb(58, 52, 52);
     margin: 0;
     padding: none;
@@ -65,7 +65,6 @@ h2 {
     background-color: rgba(0, 0, 0, 0.3);
     height: 41.7vw;
     width: 24vw;
-    /* border: 1px solid black; */
     perspective: 1000px;
     border-radius: .5rem;
     box-shadow: 0 0 .8rem black;
@@ -121,3 +120,87 @@ h2 {
 .info {
     padding: 1.2vw 5vw;
 }
+
+
+/* ------ ALL THE CARDS!!! ------ */
+/* Trevor helped me with some data manipulation so I wouldn't have to type these all out by hand. */
+
+.card-back{background-image: url('cards/card-back.jpg');}
+.tarot-chariot{background-image: url('cards/tarot-chariot.jpg');}
+.tarot-cups-01{background-image: url('cards/tarot-cups-01.jpg');}
+.tarot-cups-02{background-image: url('cards/tarot-cups-02.jpg');}
+.tarot-cups-03{background-image: url('cards/tarot-cups-03.jpg');}
+.tarot-cups-04{background-image: url('cards/tarot-cups-04.jpg');}
+.tarot-cups-05{background-image: url('cards/tarot-cups-05.jpg');}
+.tarot-cups-06{background-image: url('cards/tarot-cups-06.jpg');}
+.tarot-cups-07{background-image: url('cards/tarot-cups-07.jpg');}
+.tarot-cups-08{background-image: url('cards/tarot-cups-08.jpg');}
+.tarot-cups-09{background-image: url('cards/tarot-cups-09.jpg');}
+.tarot-cups-10{background-image: url('cards/tarot-cups-10.jpg');}
+.tarot-cups-11{background-image: url('cards/tarot-cups-11.jpg');}
+.tarot-cups-12{background-image: url('cards/tarot-cups-12.jpg');}
+.tarot-cups-13{background-image: url('cards/tarot-cups-13.jpg');}
+.tarot-cups-14{background-image: url('cards/tarot-cups-14.jpg');}
+.tarot-death{background-image: url('cards/tarot-death.jpg');}
+.tarot-devil{background-image: url('cards/tarot-devil.jpg');}
+.tarot-emperor{background-image: url('cards/tarot-emperor.jpg');}
+.tarot-empress{background-image: url('cards/tarot-empress.jpg');}
+.tarot-fool{background-image: url('cards/tarot-fool.jpg');}
+.tarot-hangedman{background-image: url('cards/tarot-hangedman.jpg');}
+.tarot-hermit{background-image: url('cards/tarot-hermit.jpg');}
+.tarot-hierophant{background-image: url('cards/tarot-hierophant.jpg');}
+.tarot-highpriestess{background-image: url('cards/tarot-highpriestess.jpg');}
+.tarot-judgement{background-image: url('cards/tarot-judgement.jpg');}
+.tarot-justice{background-image: url('cards/tarot-justice.jpg');}
+.tarot-lovers{background-image: url('cards/tarot-lovers.jpg');}
+.tarot-magician{background-image: url('cards/tarot-magician.jpg');}
+.tarot-moon{background-image: url('cards/tarot-moon.jpg');}
+.tarot-pentacles-01{background-image: url('cards/tarot-pentacles-01.jpg');}
+.tarot-pentacles-02{background-image: url('cards/tarot-pentacles-02.jpg');}
+.tarot-pentacles-03{background-image: url('cards/tarot-pentacles-03.jpg');}
+.tarot-pentacles-04{background-image: url('cards/tarot-pentacles-04.jpg');}
+.tarot-pentacles-05{background-image: url('cards/tarot-pentacles-05.jpg');}
+.tarot-pentacles-06{background-image: url('cards/tarot-pentacles-06.jpg');}
+.tarot-pentacles-07{background-image: url('cards/tarot-pentacles-07.jpg');}
+.tarot-pentacles-08{background-image: url('cards/tarot-pentacles-08.jpg');}
+.tarot-pentacles-09{background-image: url('cards/tarot-pentacles-09.jpg');}
+.tarot-pentacles-10{background-image: url('cards/tarot-pentacles-10.jpg');}
+.tarot-pentacles-11{background-image: url('cards/tarot-pentacles-11.jpg');}
+.tarot-pentacles-12{background-image: url('cards/tarot-pentacles-12.jpg');}
+.tarot-pentacles-13{background-image: url('cards/tarot-pentacles-13.jpg');}
+.tarot-pentacles-14{background-image: url('cards/tarot-pentacles-14.jpg');}
+.tarot-star{background-image: url('cards/tarot-star.jpg');}
+.tarot-strength{background-image: url('cards/tarot-strength.jpg');}
+.tarot-sun{background-image: url('cards/tarot-sun.jpg');}
+.tarot-swords-01{background-image: url('cards/tarot-swords-01.jpg');}
+.tarot-swords-02{background-image: url('cards/tarot-swords-02.jpg');}
+.tarot-swords-03{background-image: url('cards/tarot-swords-03.jpg');}
+.tarot-swords-04{background-image: url('cards/tarot-swords-04.jpg');}
+.tarot-swords-05{background-image: url('cards/tarot-swords-05.jpg');}
+.tarot-swords-06{background-image: url('cards/tarot-swords-06.jpg');}
+.tarot-swords-07{background-image: url('cards/tarot-swords-07.jpg');}
+.tarot-swords-08{background-image: url('cards/tarot-swords-08.jpg');}
+.tarot-swords-09{background-image: url('cards/tarot-swords-09.jpg');}
+.tarot-swords-10{background-image: url('cards/tarot-swords-10.jpg');}
+.tarot-swords-11{background-image: url('cards/tarot-swords-11.jpg');}
+.tarot-swords-12{background-image: url('cards/tarot-swords-12.jpg');}
+.tarot-swords-13{background-image: url('cards/tarot-swords-13.jpg');}
+.tarot-swords-14{background-image: url('cards/tarot-swords-14.jpg');}
+.tarot-temperance{background-image: url('cards/tarot-temperance.jpg');}
+.tarot-tower{background-image: url('cards/tarot-tower.jpg');}
+.tarot-wands-01{background-image: url('cards/tarot-wands-01.jpg');}
+.tarot-wands-02{background-image: url('cards/tarot-wands-02.jpg');}
+.tarot-wands-03{background-image: url('cards/tarot-wands-03.jpg');}
+.tarot-wands-04{background-image: url('cards/tarot-wands-04.jpg');}
+.tarot-wands-05{background-image: url('cards/tarot-wands-05.jpg');}
+.tarot-wands-06{background-image: url('cards/tarot-wands-06.jpg');}
+.tarot-wands-07{background-image: url('cards/tarot-wands-07.jpg');}
+.tarot-wands-08{background-image: url('cards/tarot-wands-08.jpg');}
+.tarot-wands-09{background-image: url('cards/tarot-wands-09.jpg');}
+.tarot-wands-10{background-image: url('cards/tarot-wands-10.jpg');}
+.tarot-wands-11{background-image: url('cards/tarot-wands-11.jpg');}
+.tarot-wands-12{background-image: url('cards/tarot-wands-12.jpg');}
+.tarot-wands-13{background-image: url('cards/tarot-wands-13.jpg');}
+.tarot-wands-14{background-image: url('cards/tarot-wands-14.jpg');}
+.tarot-wheeloffortune{background-image: url('cards/tarot-wheeloffortune.jpg');}
+.tarot-world{background-image: url('cards/tarot-world.jpg');}
