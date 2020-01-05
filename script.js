@@ -14,22 +14,24 @@ const card = document.querySelectorAll('.card')
 
 async function showCards() {
     try {
-        let getCards = await axios.get(deckUrl)
+        let loadCards = await axios.get(deckUrl)
         let totalCards = 78
+        let getCards = loadCards.data.cards
 
-        let getCardOneInfo = getCards.data.cards[Math.floor(Math.random() * Math.floor(totalCards))]
+        let getCardOneInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
         let cardOneInfo = document.querySelector('.cardOneInfo')
         cardOneInfo.innerHTML = ''
 
-        let getCardTwoInfo = getCards.data.cards[Math.floor(Math.random() * Math.floor(totalCards))]
+        let getCardTwoInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
         let cardTwoInfo = document.querySelector('.cardTwoInfo')
         cardTwoInfo.innerHTML = ''
 
-        let getCardThreeInfo = getCards.data.cards[Math.floor(Math.random() * Math.floor(totalCards))]
+        let getCardThreeInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
         let cardThreeInfo = document.querySelector('.cardThreeInfo')
         cardThreeInfo.innerHTML = ''
 
-        console.log(getCards.data.cards)
+        console.log(getCards)
+        console.log(getCards.indexOf(getCardOneInfo))
         console.log(getCardOneInfo)
         console.log(getCardOneInfo.name)
         console.log(getCardOneInfo.meaning_up)
