@@ -17,26 +17,18 @@ async function showCards() {
         let loadCards = await axios.get(deckUrl)
         let totalCards = 78
         let getCards = loadCards.data.cards
+        // getCards is the array of cards
 
+
+        // add images by using getCards.indexOf(cardnumber)
+        // try using switch to add image classes based on index number.... ugh
+
+
+        // - Card One
         let getCardOneInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
         let cardOneInfo = document.querySelector('.cardOneInfo')
         cardOneInfo.innerHTML = ''
 
-        let getCardTwoInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
-        let cardTwoInfo = document.querySelector('.cardTwoInfo')
-        cardTwoInfo.innerHTML = ''
-
-        let getCardThreeInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
-        let cardThreeInfo = document.querySelector('.cardThreeInfo')
-        cardThreeInfo.innerHTML = ''
-
-        console.log(getCards)
-        console.log(getCards.indexOf(getCardOneInfo))
-        console.log(getCardOneInfo)
-        console.log(getCardOneInfo.name)
-        console.log(getCardOneInfo.meaning_up)
-
-        // - Card One
         let cardOneName = document.createElement('div')
         cardOneName.innerHTML = `Card: ${getCardOneInfo.name}`
         cardOneInfo.append(cardOneName)
@@ -45,7 +37,13 @@ async function showCards() {
         cardOneMeaning.innerHTML = `Interpretation: ${getCardOneInfo.meaning_up}`
         cardOneInfo.append(cardOneMeaning)
 
+
+
         // - Card Two
+        let getCardTwoInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
+        let cardTwoInfo = document.querySelector('.cardTwoInfo')
+        cardTwoInfo.innerHTML = ''
+
         let cardTwoName = document.createElement('div')
         cardTwoName.innerHTML = `Card: ${getCardTwoInfo.name}`
         cardTwoInfo.append(cardTwoName)
@@ -54,7 +52,13 @@ async function showCards() {
         cardTwoMeaning.innerHTML = `Interpretation: ${getCardTwoInfo.meaning_up}`
         cardTwoInfo.append(cardTwoMeaning)
 
+        
+
         // - Card Three
+        let getCardThreeInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
+        let cardThreeInfo = document.querySelector('.cardThreeInfo')
+        cardThreeInfo.innerHTML = ''
+
         let cardThreeName = document.createElement('div')
         cardThreeName.innerHTML = `Card: ${getCardThreeInfo.name}`
         cardThreeInfo.append(cardThreeName)
@@ -62,6 +66,13 @@ async function showCards() {
         let cardThreeMeaning = document.createElement('div')
         cardThreeMeaning.innerHTML = `Interpretation: ${getCardThreeInfo.meaning_up}`
         cardThreeInfo.append(cardThreeMeaning)        
+
+
+        console.log(getCards)
+        console.log(getCards.indexOf(getCardOneInfo))
+        console.log(getCardOneInfo)
+        console.log(getCardOneInfo.name)
+        console.log(getCardOneInfo.meaning_up)
 
 
     } catch(err) {
@@ -78,7 +89,7 @@ showCards()
 card.forEach(item => {
     item.addEventListener('click', function() {
         if (item.classList.contains("isFlipped")) {
-            console.log(`card has already been flipped`)
+            // removed item.classList.remove("isFlipped") so cards won't flip back over. now nothing happens when already flipped cards are clicked again
         } else {
             item.classList.add("isFlipped")
         }  
