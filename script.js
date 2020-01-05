@@ -15,7 +15,7 @@ const card = document.querySelectorAll('.card')
 async function showCards() {
     try {
         let loadCards = await axios.get(deckUrl)
-        let totalCards = 78
+        let totalCards = 1
         let getCards = loadCards.data.cards
         // getCards is the array of cards
 
@@ -29,6 +29,7 @@ async function showCards() {
         let cardOneInfo = document.querySelector('.cardOneInfo')
         cardOneInfo.innerHTML = ''
         let cardOneIndex = getCards.indexOf(getCardOneInfo)
+        let cardOneImageContainer = document.querySelector('.one')
 
         let cardOneName = document.createElement('div')
         cardOneName.innerHTML = `Card: ${getCardOneInfo.name}`
@@ -37,6 +38,14 @@ async function showCards() {
         let cardOneMeaning = document.createElement('div')
         cardOneMeaning.innerHTML = `Interpretation: ${getCardOneInfo.meaning_up}`
         cardOneInfo.append(cardOneMeaning)
+        
+        // let cardOneImage = document.createElement('div')
+        // cardOneImage.classList.add('.tarot-magician')
+        // cardOneImageContainer.append(cardOneImage)
+
+        let cardOneImage = document.createElement('img')
+        cardOneImage.src = 'cards/tarot-magician.jpg'
+        cardOneImageContainer.append(cardOneImage)
 
 
 

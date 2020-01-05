@@ -81,6 +81,21 @@ h2 {
     border-radius: .5rem;
 }
 
+.up img {
+    height: 41.7vw; 
+    width: 24vw; 
+    border-radius: .5rem;
+    transform: rotateY(180deg);
+}
+
+.down {
+    background-image: url('cards/card-back.jpg');
+    background-size: cover;
+    height: 41.7vw; 
+    width: 24vw; 
+    border-radius: .5rem;
+}
+
 .card:hover {
     transform: rotateY(-30deg);
 } /* this tilts the card prior to flipping */
@@ -97,16 +112,6 @@ h2 {
     border-radius: .5rem;
 }
 
-.up {
-    background-color: cyan;
-    color: white;
-    transform: rotateY(180deg);
-}
-
-.down {
-    background-color: #bbb;
-    color: black;
-}
 
 
 /* ------ Info for each card ------ */
@@ -125,8 +130,14 @@ h2 {
 /* ------ ALL THE CARDS!!! ------ */
 /* Trevor helped me with some data manipulation so I wouldn't have to type these all out by hand. */
 
-.card-back{background-image: url('cards/card-back.jpg');}
-.tarot-magician{background-image: url('cards/tarot-magician.jpg');} /* 0 */
+/* .tarot-magician {
+    background-image: url('cards/tarot-magician.jpg');    
+    background-size: cover;
+    height: 41.7vw; 
+    width: 24vw; 
+    border-radius: .5rem;
+    transform: rotateY(180deg);
+} 0 */
 .tarot-highpriestess{background-image: url('cards/tarot-highpriestess.jpg');} /* 1 */
 .tarot-empress{background-image: url('cards/tarot-empress.jpg');} /* 2 */
 .tarot-emperor{background-image: url('cards/tarot-emperor.jpg');} /* 3 */
