@@ -28,6 +28,7 @@ async function showCards() {
         let getCardOneInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
         let cardOneInfo = document.querySelector('.cardOneInfo')
         cardOneInfo.innerHTML = ''
+        let cardOneIndex = getCards.indexOf(getCardOneInfo)
 
         let cardOneName = document.createElement('div')
         cardOneName.innerHTML = `Card: ${getCardOneInfo.name}`
@@ -43,6 +44,7 @@ async function showCards() {
         let getCardTwoInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
         let cardTwoInfo = document.querySelector('.cardTwoInfo')
         cardTwoInfo.innerHTML = ''
+        let cardTwoIndex = getCards.indexOf(getCardTwoInfo)
 
         let cardTwoName = document.createElement('div')
         cardTwoName.innerHTML = `Card: ${getCardTwoInfo.name}`
@@ -58,6 +60,7 @@ async function showCards() {
         let getCardThreeInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
         let cardThreeInfo = document.querySelector('.cardThreeInfo')
         cardThreeInfo.innerHTML = ''
+        let cardThreeIndex = getCards.indexOf(getCardThreeInfo)
 
         let cardThreeName = document.createElement('div')
         cardThreeName.innerHTML = `Card: ${getCardThreeInfo.name}`
@@ -65,11 +68,13 @@ async function showCards() {
 
         let cardThreeMeaning = document.createElement('div')
         cardThreeMeaning.innerHTML = `Interpretation: ${getCardThreeInfo.meaning_up}`
-        cardThreeInfo.append(cardThreeMeaning)        
+        cardThreeInfo.append(cardThreeMeaning)
 
 
         console.log(getCards)
-        console.log(getCards.indexOf(getCardOneInfo))
+        console.log(cardOneIndex)
+        console.log(cardTwoIndex)
+        console.log(cardThreeIndex)
         console.log(getCardOneInfo)
         console.log(getCardOneInfo.name)
         console.log(getCardOneInfo.meaning_up)
