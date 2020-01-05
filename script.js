@@ -78,7 +78,7 @@ showCards()
 card.forEach(item => {
     item.addEventListener('click', function() {
         if (item.classList.contains("isFlipped")) {
-            item.classList.remove("isFlipped")
+            console.log(`card has already been flipped`)
         } else {
             item.classList.add("isFlipped")
         }  
