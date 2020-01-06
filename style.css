@@ -10,11 +10,12 @@ body {
 header {
     /* font-family: 'Shadows Into Light', cursive; */
     text-align: center;
-    height: 200px;
+    height: 30vw;
     background-image: url("images/tarot-stock.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    position: inherit;
+    background-attachment: fixed;
+    position: initial;
     box-shadow: 0 2vw 2vw rgba(30, 42, 51, 0.8);
 }
 
@@ -27,13 +28,28 @@ h1 {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ce2dff, 0 0 30px #2db2ff, 0 0 40px #2db2ff, 0 0 50px #2db2ff, 0 0 75px #2db2ff;
 }
 
+h3 {
+    background-color: transparent;
+    text-align: center;
+    color: rgb(255, 244, 209);
+    text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71);
+    padding: 5vw 0 0 0;
+    font-size: 3vw;
+
+}
+
+.desktop {
+    display: none;
+}
+
 
 
 /* ------ Tarot Spread ------ */
 /* probably need to use grid for this section */
 .spread {
-    height: 70vw;
+    height: 90vw;
     background-image: url("images/ClothBackground.jpg");
+    margin: -5vw 0 0 0;
     box-shadow: 0 0 5px rgb(255, 30, 60), 0 0 15px rgb(255, 30, 60), 0 0 25px black, 0 0 50px black, 0 0 75px black;
 }
 
@@ -96,10 +112,6 @@ h2 {
     border-radius: .5rem;
 }
 
-.card:hover {
-    transform: rotateY(-30deg);
-} /* this tilts the card prior to flipping */
-
 .card.isFlipped {
     transform: rotateY(180deg);
 }
@@ -124,6 +136,45 @@ h2 {
 
 .info {
     padding: 1.2vw 5vw;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    .printCardInfo {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    
+    .info {
+        width: 30%;
+    }
+
+    .printCardInfo div {
+        margin: 2vw 0;
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+    .card:hover {
+        transform: rotateY(-30deg);
+    } /* this tilts the card prior to flipping */    
+
+    .card.isFlipped {
+        transform: rotateY(180deg);
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
 }
 
 
