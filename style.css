@@ -130,14 +130,7 @@ h2 {
 /* ------ ALL THE CARDS!!! ------ */
 /* Trevor helped me with some data manipulation so I wouldn't have to type these all out by hand. */
 
-/* .tarot-magician {
-    background-image: url('cards/tarot-magician.jpg');    
-    background-size: cover;
-    height: 41.7vw; 
-    width: 24vw; 
-    border-radius: .5rem;
-    transform: rotateY(180deg);
-} 0 */
+/* .tarot-magician {background-image: url('cards/tarot-magician.jpg');} /* 0 */
 .tarot-highpriestess{background-image: url('cards/tarot-highpriestess.jpg');} /* 1 */
 .tarot-empress{background-image: url('cards/tarot-empress.jpg');} /* 2 */
 .tarot-emperor{background-image: url('cards/tarot-emperor.jpg');} /* 3 */
