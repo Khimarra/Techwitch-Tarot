@@ -19,7 +19,7 @@ async function showCards() {
         let getCards = loadCards.data.cards
         // getCards is the array of cards
 
-        imageArray = [
+        let imageArray = [
             'cards/tarot-magician.jpg', 
             'cards/tarot-highpriestess.jpg', 
             'cards/tarot-empress.jpg', 

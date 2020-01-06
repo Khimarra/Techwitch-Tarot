@@ -2,7 +2,7 @@ body {
     font-family: 'Fondamento', cursive;
     color: white;
     text-shadow: 0 0 10px white, 0 0 20px #2db2ff;
-    background: rgb(58, 52, 52);
+    background: rgb(92, 27, 36);
     margin: 0;
     padding: none;
 }
@@ -47,7 +47,7 @@ h3 {
 /* ------ Tarot Spread ------ */
 /* probably need to use grid for this section */
 .spread {
-    height: 90vw;
+    height: 70vw;
     background-image: url("images/ClothBackground.jpg");
     margin: -5vw 0 0 0;
     box-shadow: 0 0 5px rgb(255, 30, 60), 0 0 15px rgb(255, 30, 60), 0 0 25px black, 0 0 50px black, 0 0 75px black;
@@ -61,6 +61,7 @@ h3 {
 }
 
 .cardPosition {
+    margin: -5vw 0 0 0;
     font-size: 3vw;
     color: rgb(255, 244, 209);
     text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71);
