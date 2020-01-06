@@ -4,11 +4,7 @@ const reverseDeckUrl = 'https://rws-cards-api.herokuapp.com/api/v1/cards/search?
 
 const card = document.querySelectorAll('.card')
 
-// const cardOne = document.querySelector('.one')
-// const cardTwo = document.querySelector('.two')
-// const cardThree = document.querySelector('.three')
-
-
+const cardText = document.querySelectorAll('.info')
 
 async function showCards() {
     try {
@@ -104,26 +100,32 @@ async function showCards() {
 
         // let cardSpread = [cardOne, cardTwo, cardThree]
 
-        // let makeCards = (function(cardNumber) {
+        cardText.forEach((item, i) => {
+
+            let getCardInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
+            let cardInfo = document.querySelector('.printCardInfo')
+            cardInfo.innerHTML = ''
+            let cardIndex = getCards.indexOf(getCardInfo)
+            let imageContainers = document.querySelectorAll('.up')
+
+            console.log(cardIndex)
+
+            let cardName = document.createElement('div')
+            cardName.innerHTML = `Card: ${getCardInfo.name}`
+            cardInfo.append(cardName)
+
+            let cardMeaning = document.createElement('div')
+            cardMeaning.innerHTML = `Interpretation: ${getCardInfo.meaning_up}`
+            cardInfo.append(cardMeaning)
             
-        //     let getCardInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
-        //     let cardInfo = document.querySelector('.cardInfo')
-        //     cardInfo.innerHTML = ''
-        //     let cardImageContainer = document.querySelector('.up')
-    
-        //     let cardName = document.createElement('div')
-        //     cardName.innerHTML = `Card: ${getCardInfo.name}`
-        //     cardInfo.append(cardName)
-    
-        //     let cardMeaning = document.createElement('div')
-        //     cardMeaning.innerHTML = `Interpretation: ${getCardInfo.meaning_up}`
-        //     cardInfo.append(cardMeaning)
+            let cardImage = document.createElement('img')
+            cardImage.src = getCardInfo.image
+            imageContainers[i].append(cardImage)      
             
-        //     let cardImage = document.createElement('img')
-        //     cardImage.src = getCardInfo.image
-        //     cardImageContainer.append(cardImage)
-    
-        // })
+            
+        })
+
+
 
         // makeCards(cardOne)
         // makeCards(cardTwo)
@@ -132,78 +134,78 @@ async function showCards() {
 
 
         // - Card One
-        let getCardOneInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
-        let cardOneInfo = document.querySelector('.cardOneInfo')
-        cardOneInfo.innerHTML = ''
-        let cardOneIndex = getCards.indexOf(getCardOneInfo)
-        let cardOneImageContainer = document.querySelector('.one')
+        // let getCardOneInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
+        // let cardOneInfo = document.querySelector('.cardOneInfo')
+        // cardOneInfo.innerHTML = ''
+        // let cardOneIndex = getCards.indexOf(getCardOneInfo)
+        // let cardOneImageContainer = document.querySelector('.one')
 
-        let cardOneName = document.createElement('div')
-        cardOneName.innerHTML = `Card: ${getCardOneInfo.name}`
-        cardOneInfo.append(cardOneName)
+        // let cardOneName = document.createElement('div')
+        // cardOneName.innerHTML = `Card: ${getCardOneInfo.name}`
+        // cardOneInfo.append(cardOneName)
 
-        let cardOneMeaning = document.createElement('div')
-        cardOneMeaning.innerHTML = `Interpretation: ${getCardOneInfo.meaning_up}`
-        cardOneInfo.append(cardOneMeaning)
+        // let cardOneMeaning = document.createElement('div')
+        // cardOneMeaning.innerHTML = `Interpretation: ${getCardOneInfo.meaning_up}`
+        // cardOneInfo.append(cardOneMeaning)
         
-        let cardOneImage = document.createElement('img')
-        cardOneImage.src = getCardOneInfo.image
-        cardOneImageContainer.append(cardOneImage)
+        // let cardOneImage = document.createElement('img')
+        // cardOneImage.src = getCardOneInfo.image
+        // cardOneImageContainer.append(cardOneImage)
 
-        delete getCards[cardOneIndex]
+        // delete getCards[cardOneIndex]
 
         // - Card Two
-        let getCardTwoInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
-        let cardTwoInfo = document.querySelector('.cardTwoInfo')
-        cardTwoInfo.innerHTML = ''
-        let cardTwoIndex = getCards.indexOf(getCardTwoInfo)
-        let cardTwoImageContainer = document.querySelector('.two')
+        // let getCardTwoInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
+        // let cardTwoInfo = document.querySelector('.cardTwoInfo')
+        // cardTwoInfo.innerHTML = ''
+        // let cardTwoIndex = getCards.indexOf(getCardTwoInfo)
+        // let cardTwoImageContainer = document.querySelector('.two')
 
-        let cardTwoName = document.createElement('div')
-        cardTwoName.innerHTML = `Card: ${getCardTwoInfo.name}`
-        cardTwoInfo.append(cardTwoName)
+        // let cardTwoName = document.createElement('div')
+        // cardTwoName.innerHTML = `Card: ${getCardTwoInfo.name}`
+        // cardTwoInfo.append(cardTwoName)
 
-        let cardTwoMeaning = document.createElement('div')
-        cardTwoMeaning.innerHTML = `Interpretation: ${getCardTwoInfo.meaning_up}`
-        cardTwoInfo.append(cardTwoMeaning)
+        // let cardTwoMeaning = document.createElement('div')
+        // cardTwoMeaning.innerHTML = `Interpretation: ${getCardTwoInfo.meaning_up}`
+        // cardTwoInfo.append(cardTwoMeaning)
 
-        let cardTwoImage = document.createElement('img')
-        cardTwoImage.src = getCardTwoInfo.image
-        cardTwoImageContainer.append(cardTwoImage)
+        // let cardTwoImage = document.createElement('img')
+        // cardTwoImage.src = getCardTwoInfo.image
+        // cardTwoImageContainer.append(cardTwoImage)
 
-        delete getCards[cardTwoIndex]
+        // delete getCards[cardTwoIndex]
 
         // - Card Three
-        let getCardThreeInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
-        let cardThreeInfo = document.querySelector('.cardThreeInfo')
-        cardThreeInfo.innerHTML = ''
-        let cardThreeIndex = getCards.indexOf(getCardThreeInfo)
-        let cardThreeImageContainer = document.querySelector('.three')
+        // let getCardThreeInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
+        // let cardThreeInfo = document.querySelector('.cardThreeInfo')
+        // cardThreeInfo.innerHTML = ''
+        // let cardThreeIndex = getCards.indexOf(getCardThreeInfo)
+        // let cardThreeImageContainer = document.querySelector('.three')
 
-        let cardThreeName = document.createElement('div')
-        cardThreeName.innerHTML = `Card: ${getCardThreeInfo.name}`
-        cardThreeInfo.append(cardThreeName)
+        // let cardThreeName = document.createElement('div')
+        // cardThreeName.innerHTML = `Card: ${getCardThreeInfo.name}`
+        // cardThreeInfo.append(cardThreeName)
 
-        let cardThreeMeaning = document.createElement('div')
-        cardThreeMeaning.innerHTML = `Interpretation: ${getCardThreeInfo.meaning_up}`
-        cardThreeInfo.append(cardThreeMeaning)
+        // let cardThreeMeaning = document.createElement('div')
+        // cardThreeMeaning.innerHTML = `Interpretation: ${getCardThreeInfo.meaning_up}`
+        // cardThreeInfo.append(cardThreeMeaning)
 
-        let cardThreeImage = document.createElement('img')
-        cardThreeImage.src = getCardThreeInfo.image
-        cardThreeImageContainer.append(cardThreeImage)
+        // let cardThreeImage = document.createElement('img')
+        // cardThreeImage.src = getCardThreeInfo.image
+        // cardThreeImageContainer.append(cardThreeImage)
 
-        delete getCards[cardThreeIndex]
+        // delete getCards[cardThreeIndex]
 
 
 
         // these console.logs are only here to help me keep track of everything in the console as I edit my code.
         console.log(getCards)
-        console.log(cardOneIndex)
-        console.log(cardTwoIndex)
-        console.log(cardThreeIndex)
-        console.log(getCardOneInfo)
-        console.log(getCardOneInfo.name)
-        console.log(getCardOneInfo.meaning_up)
+        // console.log(cardOneIndex)
+        // console.log(cardTwoIndex)
+        // console.log(cardThreeIndex)
+        // console.log(getCardOneInfo)
+        // console.log(getCardOneInfo.name)
+        // console.log(getCardOneInfo.meaning_up)
 
 
     } catch(err) {

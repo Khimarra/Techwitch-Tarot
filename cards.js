@@ -116,8 +116,6 @@ async function showCards() {
             cardMeaningDown = getCards[i].meaning_rev
             cardSection.append(cardMeaningDown)
 
-
-
         }
 
     } catch(err) {
