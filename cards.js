@@ -101,19 +101,19 @@ async function showCards() {
             cardSection.append(image)
 
             let cardName = document.createElement('h3')
-            cardName = getCards[i].name
+            cardName.innerHTML = `${getCards[i].name}`
             cardSection.append(cardName)
 
             let cardDescription = document.createElement('h4')
-            cardDescription = getCards[i].desc
+            cardDescription.innerHTML = `${getCards[i].desc}`
             cardSection.append(cardDescription)
 
             let cardMeaningUp = document.createElement('h4')
-            cardMeaningUp = getCards[i].meaning_up
+            cardMeaningUp.innerHTML = `Upright Meaning: ${getCards[i].meaning_up}`
             cardSection.append(cardMeaningUp)
 
             let cardMeaningDown = document.createElement('h4')
-            cardMeaningDown = getCards[i].meaning_rev
+            cardMeaningDown.innerHTML = `Reverse Meaning: ${getCards[i].meaning_rev}`
             cardSection.append(cardMeaningDown)
 
         }

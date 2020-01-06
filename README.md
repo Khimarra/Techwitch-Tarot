@@ -52,7 +52,7 @@
 ## Timeframes:
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Building HTML | H | 4hrs | 3hrs | 0hrs |
+| Building HTML | H | 4hrs | 4hrs | 0hrs |
 | Working with API | H | 4hrs | 3hrs | 0hrs |
 | Adding card images | H | 5hrs | 7hrs | 0hrs |
 | Styling with 2+ media queries | H | 6hrs | 4.5hrs | 0hrs |
