@@ -25,13 +25,13 @@
 ## Post-MVP:
 - Cards start with backs up, flip when user clicks them - DONE
 - Card flip animation - DONE
-- Make sure cards can't repeat
-- Full RWS description of card, not just meanings
+- Make sure cards can't repeat - DONE
+- Full RWS description of card, not just meanings - DONE
 - Add reverse-meanings (doubles total cards)
-- Add "library" of cards user can look through
+- Add "library" of cards user can look through - DONE
 - Add search bar so user can search for a specific card
 - Use local storage to store readings
-- Move card info to display on top of flipped cards instead of underneath
+- Move card info to display layered on top of flipped cards instead of underneath
 - Make JS DRYer so I don't have the same code repeated for each card
 - Add "advice" page to help people understand tarot
 
