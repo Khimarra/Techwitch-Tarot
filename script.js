@@ -150,6 +150,8 @@ async function showCards() {
         cardOneImage.src = getCardOneInfo.image
         cardOneImageContainer.append(cardOneImage)
 
+        delete getCards[cardOneIndex]
+
         // - Card Two
         let getCardTwoInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
         let cardTwoInfo = document.querySelector('.cardTwoInfo')
@@ -169,7 +171,7 @@ async function showCards() {
         cardTwoImage.src = getCardTwoInfo.image
         cardTwoImageContainer.append(cardTwoImage)
 
-        
+        delete getCards[cardTwoIndex]
 
         // - Card Three
         let getCardThreeInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
@@ -190,6 +192,7 @@ async function showCards() {
         cardThreeImage.src = getCardThreeInfo.image
         cardThreeImageContainer.append(cardThreeImage)
 
+        delete getCards[cardThreeIndex]
 
 
 

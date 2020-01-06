@@ -33,6 +33,7 @@
 - Use local storage to store readings
 - Move card info to display on top of flipped cards instead of underneath
 - Make JS DRYer so I don't have the same code repeated for each card
+- Add "advice" page to help people understand tarot
 
 ## Goals:
 |  Day | Deliverable | Status
