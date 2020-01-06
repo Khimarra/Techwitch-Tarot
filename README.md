@@ -25,6 +25,7 @@
 ## Post-MVP:
 - Cards start with backs up, flip when user clicks them - DONE
 - Card flip animation - DONE
+- Make sure cards can't repeat
 - Full RWS description of card, not just meanings
 - Add reverse-meanings (doubles total cards)
 - Add "library" of cards user can look through
@@ -41,7 +42,7 @@
 |Jan 4th| Core Application Structure (HTML, CSS, etc.) | Complete
 |Jan 6th| actual code, get cards generating randomly | Complete
 |Jan 7th| Initial Clickable Model (responsive)  | Complete
-|Jan 8th| MVP | Incomplete
+|Jan 8th| MVP | Complete
 |Jan 9th| Present | Incomplete
 
 ## Priority Matrix:
