@@ -1,0 +1,60 @@
+body {
+    font-family: 'Fondamento', cursive;
+    color: white;
+    text-shadow: 0 0 10px white, 0 0 20px #2db2ff;
+    background: rgb(92, 27, 36);
+    margin: 0;
+    padding: none;
+}
+
+header {
+    text-align: center;
+    height: 30vw;
+    background-image: url("images/tarot-stock.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: initial;
+    box-shadow: 0 2vw 2vw rgba(30, 42, 51, 0.8);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 7vw;
+    background-color: #0e364d;
+    box-shadow: 0 0 5px #0e364d, 0 0 10px #0e364d, 0 0 25px black, 0 0 45px black;
+    opacity: .7;
+}
+
+nav a {
+    width: 30%;
+    font-size: 3vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+    font-size: 10vw;
+    margin: 0;
+    padding-top: 1vw;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ce2dff, 0 0 30px #2db2ff, 0 0 40px #2db2ff, 0 0 50px #2db2ff, 0 0 75px #2db2ff;
+}
+
+.spread {
+    height: 860vw;
+    background-image: url("images/ClothBackground.jpg");
+    margin: -5vw 0 0 0;
+    box-shadow: 0 0 5px rgb(255, 30, 60), 0 0 15px rgb(255, 30, 60), 0 0 25px black, 0 0 50px black, 0 0 75px black;
+}
+
+img {
+    background-color: #0e364d;
+    height: 41.7vw;
+    width: 24vw;
+    border-radius: .5rem;
+}
