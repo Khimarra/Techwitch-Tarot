@@ -45,6 +45,16 @@ h1 {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ce2dff, 0 0 30px #2db2ff, 0 0 40px #2db2ff, 0 0 50px #2db2ff, 0 0 75px #2db2ff;
 }
 
+.title {
+    -webkit-animation: glow 1s infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d2d, 0 0 30px #a02dff, 0 0 40px #a02dff, 0 0 50px #2db2ff, 0 0 75px #ffffff;
+    }
+}
+
 .spread {
     display: flex;
     flex-direction: column;
@@ -52,7 +62,6 @@ h1 {
     height: auto;
     background-image: url("images/ClothBackground.jpg");
     margin: -5vw 0 0 0;
-    padding-top: 5vw;
     box-shadow: 0 0 5px rgb(255, 30, 60), 0 0 15px rgb(255, 30, 60), 0 0 25px black, 0 0 50px black, 0 0 75px black;
 }
 
@@ -61,9 +70,10 @@ img {
     background-color: #0e364d;
     width: 90%;
     height: auto;
-    margin: 5vw;
+    margin-top: 10vw;
     border-radius: 2vw;
     align-content: center;
+    box-shadow: 0 0 2vw black;
 }
 
 h3 {
@@ -71,7 +81,6 @@ h3 {
     text-align: center;
     color: rgb(255, 244, 209);
     text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71);
-    padding: 5vw 0 0 0;
     font-size: 5vw;
 }
 
@@ -114,12 +123,28 @@ h4 {
 /* ------ Desktop ------ */
 @media only screen and (min-width: 900px) {
 
-    header {
-        height: 35vw;
+    nav {
+        height: 4vw;
+        padding: 0 20vw;
     }
 
-    p {
+    nav a {
         font-size: 1.7vw;
+    }
+
+    img {
+        width: 20%;
+        height: auto;
+        border-radius: 1vw;
+    }
+
+    h3 {
+        font-size: 2vw;
+    }
+
+    h4 {
+        font-size: 1.7vw;
+        align-self: flex-start;
     }
 
 }

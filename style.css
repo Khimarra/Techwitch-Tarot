@@ -45,6 +45,16 @@ h1 {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ce2dff, 0 0 30px #2db2ff, 0 0 40px #2db2ff, 0 0 50px #2db2ff, 0 0 75px #2db2ff;
 }
 
+.title {
+    -webkit-animation: glow 1s infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d2d, 0 0 30px #a02dff, 0 0 40px #a02dff, 0 0 50px #2db2ff, 0 0 75px #ffffff;
+    }
+}
+
 p {
     display: none;
 }
