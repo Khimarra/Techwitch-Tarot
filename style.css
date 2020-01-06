@@ -24,8 +24,9 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     height: 7vw;
-    background-color: rgba(30, 42, 51, 0.7);
-    box-shadow: 0 0 25px #0e364d, 0 0 45px #0e364d;
+    background-color: #0e364d;
+    box-shadow: 0 0 5px #0e364d, 0 0 10px #0e364d, 0 0 25px black, 0 0 45px black;
+    opacity: .7;
 }
 
 nav a {
@@ -54,7 +55,30 @@ h3 {
     color: rgb(255, 244, 209);
     text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71);
     padding: 5vw 0 0 0;
+    font-size: 5vw;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h4 {
+    background-color: transparent;
+    color: rgb(255, 244, 209);
+    text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71);
+    font-size: 4vw;
+    margin-bottom: 1vw;
+    padding: 0 5vw;
+}
+
+h5 {
+    background-color: transparent;
+    color: rgb(255, 244, 209);
+    text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71);
     font-size: 3vw;
+    margin: 0;
+    padding: 0 5vw;
 
 }
 
@@ -70,6 +94,10 @@ h3 {
     background-image: url("images/ClothBackground.jpg");
     margin: -5vw 0 0 0;
     box-shadow: 0 0 5px rgb(255, 30, 60), 0 0 15px rgb(255, 30, 60), 0 0 25px black, 0 0 50px black, 0 0 75px black;
+}
+
+.advice {
+    height: 200vw;
 }
 
 .cardSpread {
