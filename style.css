@@ -8,9 +8,8 @@ body {
 }
 
 header {
-    /* font-family: 'Shadows Into Light', cursive; */
     text-align: center;
-    height: 30vw;
+    height: 25vw;
     background-image: url("images/tarot-stock.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,9 +22,12 @@ h1 {
     font-size: 10vw;
     margin: 0;
     padding-top: 5vw;
-    /* color: rgb(0, 170, 231); */
     color: rgb(255, 255, 255);
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ce2dff, 0 0 30px #2db2ff, 0 0 40px #2db2ff, 0 0 50px #2db2ff, 0 0 75px #2db2ff;
+}
+
+p {
+    display: none;
 }
 
 h3 {
@@ -45,7 +47,6 @@ h3 {
 
 
 /* ------ Tarot Spread ------ */
-/* probably need to use grid for this section */
 .spread {
     height: 70vw;
     background-image: url("images/ClothBackground.jpg");
@@ -128,7 +129,6 @@ h2 {
 
 
 /* ------ Info for each card ------ */
-
 .printCardInfo {
     display: flex;
     flex-direction: column;
@@ -140,7 +140,24 @@ h2 {
 }
 
 
+
+/* ------ Tablets ------ */
 @media only screen and (min-width: 600px) {
+
+    header {
+        height: 45vw;
+    }
+
+    h1 {
+        font-size: 7vw;
+    }
+
+    p {
+        display: block;
+        padding: 0 5vw;
+        font-size: 2.2vw;
+        text-shadow: 0 0 3px white, 0 0 5px #0e364d, 0 0 10px #0e364d, 0 0 15px #0e364d, 0 0 30px #0e364d;
+    }
 
     .printCardInfo {
         display: flex;
@@ -158,7 +175,18 @@ h2 {
 
 }
 
+
+
+/* ------ Desktop ------ */
 @media only screen and (min-width: 900px) {
+
+    header {
+        height: 35vw;
+    }
+
+    p {
+        font-size: 1.7vw;
+    }
 
     .card:hover {
         transform: rotateY(-30deg);
@@ -177,89 +205,3 @@ h2 {
     }
 
 }
-
-
-/* ------ ALL THE CARDS!!! ------ */
-/* Trevor helped me with some data manipulation so I wouldn't have to type these all out by hand. */
-
-/* these classes are actually unnecessary now, as I put the images into an array and used a for loop to add each to the appropriate object */
-
-/* .tarot-magician {background-image: url('cards/tarot-magician.jpg');}
-.tarot-highpriestess{background-image: url('cards/tarot-highpriestess.jpg');}
-.tarot-empress{background-image: url('cards/tarot-empress.jpg');}
-.tarot-emperor{background-image: url('cards/tarot-emperor.jpg');}
-.tarot-hierophant{background-image: url('cards/tarot-hierophant.jpg');}
-.tarot-lovers{background-image: url('cards/tarot-lovers.jpg');}
-.tarot-chariot{background-image: url('cards/tarot-chariot.jpg');}
-.tarot-strength{background-image: url('cards/tarot-strength.jpg');}
-.tarot-hermit{background-image: url('cards/tarot-hermit.jpg');}
-.tarot-wheeloffortune{background-image: url('cards/tarot-wheeloffortune.jpg');}
-.tarot-justice{background-image: url('cards/tarot-justice.jpg');}
-.tarot-hangedman{background-image: url('cards/tarot-hangedman.jpg');}
-.tarot-death{background-image: url('cards/tarot-death.jpg');}
-.tarot-temperance{background-image: url('cards/tarot-temperance.jpg');}
-.tarot-devil{background-image: url('cards/tarot-devil.jpg');}
-.tarot-tower{background-image: url('cards/tarot-tower.jpg');}
-.tarot-star{background-image: url('cards/tarot-star.jpg');}
-.tarot-moon{background-image: url('cards/tarot-moon.jpg');}
-.tarot-sun{background-image: url('cards/tarot-sun.jpg');}
-.tarot-judgement{background-image: url('cards/tarot-judgement.jpg');}
-.tarot-fool{background-image: url('cards/tarot-fool.jpg');}
-.tarot-world{background-image: url('cards/tarot-world.jpg');}
-.tarot-wands-11{background-image: url('cards/tarot-wands-11.jpg');}
-.tarot-wands-12{background-image: url('cards/tarot-wands-12.jpg');}
-.tarot-wands-13{background-image: url('cards/tarot-wands-13.jpg');}
-.tarot-wands-14{background-image: url('cards/tarot-wands-14.jpg');}
-.tarot-wands-01{background-image: url('cards/tarot-wands-01.jpg');}
-.tarot-wands-02{background-image: url('cards/tarot-wands-02.jpg');}
-.tarot-wands-03{background-image: url('cards/tarot-wands-03.jpg');}
-.tarot-wands-04{background-image: url('cards/tarot-wands-04.jpg');}
-.tarot-wands-05{background-image: url('cards/tarot-wands-05.jpg');}
-.tarot-wands-06{background-image: url('cards/tarot-wands-06.jpg');}
-.tarot-wands-07{background-image: url('cards/tarot-wands-07.jpg');}
-.tarot-wands-08{background-image: url('cards/tarot-wands-08.jpg');}
-.tarot-wands-09{background-image: url('cards/tarot-wands-09.jpg');}
-.tarot-wands-10{background-image: url('cards/tarot-wands-10.jpg');}
-.tarot-cups-11{background-image: url('cards/tarot-cups-11.jpg');}
-.tarot-cups-12{background-image: url('cards/tarot-cups-12.jpg');}
-.tarot-cups-13{background-image: url('cards/tarot-cups-13.jpg');}
-.tarot-cups-14{background-image: url('cards/tarot-cups-14.jpg');}
-.tarot-cups-01{background-image: url('cards/tarot-cups-01.jpg');}
-.tarot-cups-02{background-image: url('cards/tarot-cups-02.jpg');}
-.tarot-cups-03{background-image: url('cards/tarot-cups-03.jpg');}
-.tarot-cups-04{background-image: url('cards/tarot-cups-04.jpg');}
-.tarot-cups-05{background-image: url('cards/tarot-cups-05.jpg');}
-.tarot-cups-06{background-image: url('cards/tarot-cups-06.jpg');}
-.tarot-cups-07{background-image: url('cards/tarot-cups-07.jpg');}
-.tarot-cups-08{background-image: url('cards/tarot-cups-08.jpg');}
-.tarot-cups-09{background-image: url('cards/tarot-cups-09.jpg');}
-.tarot-cups-10{background-image: url('cards/tarot-cups-10.jpg');}
-.tarot-pentacles-11{background-image: url('cards/tarot-pentacles-11.jpg');}
-.tarot-pentacles-12{background-image: url('cards/tarot-pentacles-12.jpg');}
-.tarot-pentacles-13{background-image: url('cards/tarot-pentacles-13.jpg');}
-.tarot-pentacles-14{background-image: url('cards/tarot-pentacles-14.jpg');}
-.tarot-pentacles-01{background-image: url('cards/tarot-pentacles-01.jpg');}
-.tarot-pentacles-02{background-image: url('cards/tarot-pentacles-02.jpg');}
-.tarot-pentacles-03{background-image: url('cards/tarot-pentacles-03.jpg');}
-.tarot-pentacles-04{background-image: url('cards/tarot-pentacles-04.jpg');}
-.tarot-pentacles-05{background-image: url('cards/tarot-pentacles-05.jpg');}
-.tarot-pentacles-06{background-image: url('cards/tarot-pentacles-06.jpg');}
-.tarot-pentacles-07{background-image: url('cards/tarot-pentacles-07.jpg');}
-.tarot-pentacles-08{background-image: url('cards/tarot-pentacles-08.jpg');}
-.tarot-pentacles-09{background-image: url('cards/tarot-pentacles-09.jpg');}
-.tarot-pentacles-10{background-image: url('cards/tarot-pentacles-10.jpg');}
-.tarot-swords-11{background-image: url('cards/tarot-swords-11.jpg');}
-.tarot-swords-12{background-image: url('cards/tarot-swords-12.jpg');}
-.tarot-swords-13{background-image: url('cards/tarot-swords-13.jpg');}
-.tarot-swords-14{background-image: url('cards/tarot-swords-14.jpg');}
-.tarot-swords-01{background-image: url('cards/tarot-swords-01.jpg');}
-.tarot-swords-02{background-image: url('cards/tarot-swords-02.jpg');}
-.tarot-swords-03{background-image: url('cards/tarot-swords-03.jpg');}
-.tarot-swords-04{background-image: url('cards/tarot-swords-04.jpg');}
-.tarot-swords-05{background-image: url('cards/tarot-swords-05.jpg');}
-.tarot-swords-06{background-image: url('cards/tarot-swords-06.jpg');}
-.tarot-swords-07{background-image: url('cards/tarot-swords-07.jpg');}
-.tarot-swords-08{background-image: url('cards/tarot-swords-08.jpg');}
-.tarot-swords-09{background-image: url('cards/tarot-swords-09.jpg');}
-.tarot-swords-10{background-image: url('cards/tarot-swords-10.jpg');}
- */

@@ -1,5 +1,3 @@
-// init commit
-
 const deckUrl = 'https://rws-cards-api.herokuapp.com/api/v1/cards'
 
 const reverseDeckUrl = 'https://rws-cards-api.herokuapp.com/api/v1/cards/search?meaning=difficult'
@@ -104,6 +102,34 @@ async function showCards() {
             getCards[i].image = imageArray[i]
         }
 
+        // let cardSpread = [cardOne, cardTwo, cardThree]
+
+        // let makeCards = (function(cardNumber) {
+            
+        //     let getCardInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
+        //     let cardInfo = document.querySelector('.cardInfo')
+        //     cardInfo.innerHTML = ''
+        //     let cardImageContainer = document.querySelector('.up')
+    
+        //     let cardName = document.createElement('div')
+        //     cardName.innerHTML = `Card: ${getCardInfo.name}`
+        //     cardInfo.append(cardName)
+    
+        //     let cardMeaning = document.createElement('div')
+        //     cardMeaning.innerHTML = `Interpretation: ${getCardInfo.meaning_up}`
+        //     cardInfo.append(cardMeaning)
+            
+        //     let cardImage = document.createElement('img')
+        //     cardImage.src = getCardInfo.image
+        //     cardImageContainer.append(cardImage)
+    
+        // })
+
+        // makeCards(cardOne)
+        // makeCards(cardTwo)
+        // makeCards(cardThree)
+
+
 
         // - Card One
         let getCardOneInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
@@ -152,7 +178,6 @@ async function showCards() {
         let cardThreeIndex = getCards.indexOf(getCardThreeInfo)
         let cardThreeImageContainer = document.querySelector('.three')
 
-
         let cardThreeName = document.createElement('div')
         cardThreeName.innerHTML = `Card: ${getCardThreeInfo.name}`
         cardThreeInfo.append(cardThreeName)
@@ -164,6 +189,8 @@ async function showCards() {
         let cardThreeImage = document.createElement('img')
         cardThreeImage.src = getCardThreeInfo.image
         cardThreeImageContainer.append(cardThreeImage)
+
+
 
 
         // these console.logs are only here to help me keep track of everything in the console as I edit my code.
