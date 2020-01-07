@@ -11,7 +11,7 @@ body {
 
 header {
     text-align: center;
-    height: 25vw;
+    height: 30vw;
     background-image: url("images/tarot-stock.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,13 +68,15 @@ p {
 
 /* ------ Tarot Spread ------ */
 .spread {
-    height: 75vw;
+    height: auto;
+    min-height: 100vh;
     background-image: url("images/ClothBackground.jpg");
     margin: -5vw 0 0 0;
     box-shadow: 0 0 5px rgb(255, 30, 60), 0 0 15px rgb(255, 30, 60), 0 0 25px black, 0 0 50px black, 0 0 75px black;
 }
 
-h3 { /* instructions */
+/* instructions */
+h3 { 
     background-color: transparent;
     text-align: center;
     color: rgb(255, 244, 209);
@@ -85,11 +87,11 @@ h3 { /* instructions */
 
 h4 {
     background-color: transparent;
+    text-align: center;
     color: rgb(255, 244, 209);
     text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71);
     font-size: 4vw;
-    margin-bottom: 1vw;
-    padding: 0 5vw;
+    margin-bottom: 20vw;
 }
 
 h5 {
@@ -151,6 +153,7 @@ h2 {
     perspective: 1000px;
     border-radius: .5rem;
     box-shadow: 0 0 2vw black;
+    margin-bottom: 7vw;
 }
 
 .card {
@@ -210,6 +213,10 @@ h2 {
     position: absolute;
     text-align: center;
     transform: rotateY(180deg);
+}
+
+.info div {
+    padding: 1.5vw;
 }
 
 .info:active {

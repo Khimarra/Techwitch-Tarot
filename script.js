@@ -140,14 +140,7 @@ async function showCards() {
 
 
 
-        // these console.logs are only here to help me keep track of everything in the console as I edit my code.
         console.log(getCards)
-        // console.log(cardOneIndex)
-        // console.log(cardTwoIndex)
-        // console.log(cardThreeIndex)
-        // console.log(getCardOneInfo)
-        // console.log(getCardOneInfo.name)
-        // console.log(getCardOneInfo.meaning_up)
 
 
     } catch(err) {
@@ -160,11 +153,9 @@ showCards()
 
 
 // learned how to make card flip on click from https://codepen.io/AdamTheWizard/pen/QVgLLR
-// might have to split this to do it for each card individually in order to get info to appear after click?
 card.forEach(item => {
     item.addEventListener('click', function() {
         if (item.classList.contains("isFlipped")) {
-            // removed item.classList.remove("isFlipped") so cards won't flip back over. now nothing happens when already flipped cards are clicked again
         } else {
             item.classList.add("isFlipped")
         }  
