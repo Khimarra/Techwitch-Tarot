@@ -7,6 +7,8 @@ body {
     padding: none;
 }
 
+/* ------ Header Section ------ */
+
 header {
     text-align: center;
     height: 25vw;
@@ -45,6 +47,7 @@ h1 {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ce2dff, 0 0 30px #2db2ff, 0 0 40px #2db2ff, 0 0 50px #2db2ff, 0 0 75px #2db2ff;
 }
 
+/* animated glow effect on title */
 .title {
     animation: glow 1s infinite alternate;
 }
@@ -55,8 +58,20 @@ h1 {
     }
 }
 
+/* explanation of tarot */
 p {
     display: none;
+}
+
+
+
+
+/* ------ Tarot Spread ------ */
+.spread {
+    height: 75vw;
+    background-image: url("images/ClothBackground.jpg");
+    margin: -5vw 0 0 0;
+    box-shadow: 0 0 5px rgb(255, 30, 60), 0 0 15px rgb(255, 30, 60), 0 0 25px black, 0 0 50px black, 0 0 75px black;
 }
 
 h3 {
@@ -66,11 +81,6 @@ h3 {
     text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71);
     padding: 5vw 0 0 0;
     font-size: 5vw;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
 }
 
 h4 {
@@ -96,17 +106,6 @@ h5 {
     display: none;
 }
 
-
-
-/* ------ Tarot Spread ------ */
-.spread {
-    height: 75vw;
-    background-image: url("images/ClothBackground.jpg");
-    margin: -5vw 0 0 0;
-    box-shadow: 0 0 5px rgb(255, 30, 60), 0 0 15px rgb(255, 30, 60), 0 0 25px black, 0 0 50px black, 0 0 75px black;
-}
-
-
 .cardSpread {
     display: flex;
     flex-direction: row;
@@ -118,11 +117,13 @@ h5 {
     margin: -5vw 0 0 0;
     font-size: 3vw;
     color: rgb(255, 244, 209);
-    text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71);
+    text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71), 0 0 30px #2db2ff, 0 0 40px white;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    animation: glow 1.5s infinite alternate;
 }
+
 
 h2 {
     width: 25%;
@@ -215,6 +216,14 @@ h2 {
         text-shadow: 0 0 3px white, 0 0 5px #0e364d, 0 0 10px #0e364d, 0 0 15px #0e364d, 0 0 30px #0e364d;
     }
 
+    h3 {
+        font-size: 4vw;
+    }
+
+    h4 {
+        font-size: 3vw;
+    }
+
     .printCardInfo {
         display: flex;
         flex-direction: row;
@@ -251,6 +260,14 @@ h2 {
 
     p {
         font-size: 1.7vw;
+    }
+
+    h3 {
+        font-size: 3vw;
+    }
+
+    h4 {
+        font-size: 2.5vw;
     }
 
     .card:hover {
