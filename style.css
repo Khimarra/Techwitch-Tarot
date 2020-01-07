@@ -69,7 +69,7 @@ p {
 /* ------ Tarot Spread ------ */
 .spread {
     height: auto;
-    min-height: 100vh;
+    min-height: 69vh;
     background-image: url("images/ClothBackground.jpg");
     margin: -5vw 0 0 0;
     box-shadow: 0 0 5px rgb(255, 30, 60), 0 0 15px rgb(255, 30, 60), 0 0 25px black, 0 0 50px black, 0 0 75px black;
@@ -223,7 +223,20 @@ h2 {
     opacity: 1;
 }
 
+footer {
+    padding-top: 5vw;
+    padding-bottom: 3vw;
+}
 
+footer h5 {
+    font-size: 3vw;
+    text-shadow: 0 0 2px black, 0 0 5px black, 0 0 10px black;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 30, 60);
+}
 
 
 
@@ -315,10 +328,17 @@ h2 {
     .desktop {
         display: block;
     }
+
+    .info {
+        font-size: 1.4vw;
+    }
     
     .info:hover {
         opacity: 1;
     }
     
+    footer h5 {
+        font-size: 1.2vw;
+    }    
 
 }

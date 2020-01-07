@@ -31,7 +31,7 @@
 - Add "library" of cards user can look through - DONE
 - Add search bar so user can search for a specific card
 - Use local storage to store readings
-- Move card info to display layered on top of flipped cards instead of underneath (tooltip? image hover overlay?)
+- Move card info to display layered on top of flipped cards instead of underneath (tooltip? image hover overlay?) - DONE
 - Make JS DRYer so I don't have the same code repeated for each card - DONE
 - Add "advice" page to help people understand tarot
 
@@ -55,11 +55,11 @@
 | Building HTML | H | 4hrs | 4hrs | 0hrs |
 | Working with API | H | 4hrs | 3hrs | 0hrs |
 | Adding card images | H | 5hrs | 7hrs | 0hrs |
-| Styling with 2+ media queries | H | 6hrs | 12hrs | 0hrs |
+| Styling with 2+ media queries | H | 6hrs | 15hrs | 0hrs |
 | Adding local storage | M | 2hrs | 0hrs | 0hrs |
 | Card flip animation | M | 5hrs? | 2.5hrs | 0hrs |
-| Adding additional card info | M | 3hrs | .5hrs | 0hrs |
+| Adding additional card info | M | 3hrs | .3hrs | 0hrs |
 | Adding card library | M | 5hrs | 3hrs | 0hrs |
 | Adding search bar | L | 3hrs | 0hrs | 0hrs |
-| Total | H | 37hrs| 32hrs | 0hrs |
+| Total | H | 37hrs| 36hrs | 0hrs |
 

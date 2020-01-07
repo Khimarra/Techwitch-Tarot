@@ -9,7 +9,7 @@ body {
 
 header {
     text-align: center;
-    height: 30vw;
+    height: 35vw;
     background-image: url("images/tarot-stock.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,6 +94,31 @@ h4 {
     border-bottom: rgb(255, 244, 209);
 }
 
+h5 {
+    background-color: transparent;
+    color: rgb(255, 244, 209);
+    text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71);
+    font-size: 3vw;
+    margin: 0;
+    padding: 0 5vw;
+
+}
+
+footer {
+    padding-top: 5vw;
+    padding-bottom: 3vw;
+}
+
+footer h5 {
+    font-size: 3vw;
+    text-shadow: 0 0 2px black, 0 0 5px black, 0 0 10px black;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 30, 60);
+}
+
 
 
 /* ------ Tablets ------ */
@@ -150,5 +175,9 @@ h4 {
         font-size: 1.7vw;
         align-self: flex-start;
     }
+
+    footer h5 {
+        font-size: 1.2vw;
+    }   
 
 }
