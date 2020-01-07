@@ -24,8 +24,8 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     height: 7vw;
-    background-color: #0e364d;
-    box-shadow: 0 0 5px #0e364d, 0 0 10px #0e364d, 0 0 25px black, 0 0 45px black;
+    background-color: #081e2b;
+    box-shadow: 0 0 5px #081e2b, 0 0 10px #081e2b, 0 0 25px black, 0 0 45px black;
     opacity: .7;
 }
 
@@ -46,10 +46,10 @@ h1 {
 }
 
 .title {
-    -webkit-animation: glow 1s infinite alternate;
+    animation: glow 1s infinite alternate;
 }
 
-@-webkit-keyframes glow {
+@keyframes glow {
     to {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d2d, 0 0 30px #a02dff, 0 0 40px #a02dff, 0 0 50px #2db2ff, 0 0 75px #ffffff;
     }
@@ -114,6 +114,10 @@ h4 {
 
     h3 {
         font-size: 4vw;
+    }
+
+    h4 {
+        font-size: 2.9vw;
     }
 
 }

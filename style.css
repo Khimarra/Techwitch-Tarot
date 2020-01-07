@@ -24,8 +24,8 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     height: 7vw;
-    background-color: #0e364d;
-    box-shadow: 0 0 5px #0e364d, 0 0 10px #0e364d, 0 0 25px black, 0 0 45px black;
+    background-color: #081e2b;
+    box-shadow: 0 0 5px #081e2b, 0 0 10px #081e2b, 0 0 25px black, 0 0 45px black;
     opacity: .7;
 }
 
@@ -46,10 +46,10 @@ h1 {
 }
 
 .title {
-    -webkit-animation: glow 1s infinite alternate;
+    animation: glow 1s infinite alternate;
 }
 
-@-webkit-keyframes glow {
+@keyframes glow {
     to {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d2d, 0 0 30px #a02dff, 0 0 40px #a02dff, 0 0 50px #2db2ff, 0 0 75px #ffffff;
     }
@@ -100,7 +100,7 @@ h5 {
 
 /* ------ Tarot Spread ------ */
 .spread {
-    height: 70vw;
+    height: 75vw;
     background-image: url("images/ClothBackground.jpg");
     margin: -5vw 0 0 0;
     box-shadow: 0 0 5px rgb(255, 30, 60), 0 0 15px rgb(255, 30, 60), 0 0 25px black, 0 0 50px black, 0 0 75px black;
@@ -138,7 +138,7 @@ h2 {
     width: 24vw;
     perspective: 1000px;
     border-radius: .5rem;
-    box-shadow: 0 0 .8rem black;
+    box-shadow: 0 0 2vw black;
 }
 
 .card {
@@ -238,6 +238,15 @@ h2 {
 
     header {
         height: 35vw;
+    }
+
+    nav {
+        height: 4vw;
+        padding: 0 20vw;
+    }
+
+    nav a {
+        font-size: 1.7vw;
     }
 
     p {

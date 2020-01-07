@@ -31,7 +31,7 @@
 - Add "library" of cards user can look through - DONE
 - Add search bar so user can search for a specific card
 - Use local storage to store readings
-- Move card info to display layered on top of flipped cards instead of underneath
+- Move card info to display layered on top of flipped cards instead of underneath (tooltip? image hover overlay?)
 - Make JS DRYer so I don't have the same code repeated for each card
 - Add "advice" page to help people understand tarot
 
