@@ -6,6 +6,9 @@ const card = document.querySelectorAll('.card')
 
 const cardText = document.querySelectorAll('.info')
 
+const imageContainers = document.querySelectorAll('.up')
+
+
 async function showCards() {
     try {
         let loadCards = await axios.get(deckUrl)
@@ -105,20 +108,28 @@ async function showCards() {
             let cardInfo = document.querySelectorAll('.info')
             cardInfo.innerHTML = ''
             let cardIndex = getCards.indexOf(getCardInfo)
-            let imageContainers = document.querySelectorAll('.up')
-
-            console.log(cardIndex)
-
             let cardName = document.createElement('div')
-            cardName.innerHTML = `Card: ${getCardInfo.name}`
-            cardInfo[i].append(cardName)
-
             let cardMeaning = document.createElement('div')
-            cardMeaning.innerHTML = `Interpretation: ${getCardInfo.meaning_up}`
-            cardInfo[i].append(cardMeaning)
-            
             let cardImage = document.createElement('img')
-            cardImage.src = getCardInfo.image
+
+            
+            function cardDirection() {
+                return (Math.floor(Math.random() * 2))
+            }
+            
+            if (cardDirection() === 0) {
+                cardName.innerHTML = `Card: ${getCardInfo.name}`
+                cardMeaning.innerHTML = `Interpretation: ${getCardInfo.meaning_up}`
+                cardImage.src = getCardInfo.image
+            } else {
+                cardName.innerHTML = `Card: ${getCardInfo.name} reversed`
+                cardMeaning.innerHTML = `Interpretation: ${getCardInfo.meaning_rev}`
+                cardImage.src = getCardInfo.image
+                cardImage.classList.add('.reversed')
+            }
+
+            cardInfo[i].append(cardName)
+            cardInfo[i].append(cardMeaning)
             imageContainers[i].append(cardImage)
 
             delete getCards[cardIndex]

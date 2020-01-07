@@ -180,6 +180,10 @@ h2 {
     border-radius: .5rem;
 }
 
+.reversed {
+    display: none;
+}
+
 
 
 /* ------ Info for each card ------ */
