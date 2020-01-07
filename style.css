@@ -74,7 +74,7 @@ p {
     box-shadow: 0 0 5px rgb(255, 30, 60), 0 0 15px rgb(255, 30, 60), 0 0 25px black, 0 0 50px black, 0 0 75px black;
 }
 
-h3 {
+h3 { /* instructions */
     background-color: transparent;
     text-align: center;
     color: rgb(255, 244, 209);
@@ -121,14 +121,25 @@ h5 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    animation: glow 1.5s infinite alternate;
 }
-
 
 h2 {
     width: 25%;
     text-align: center;
 }
+
+.past {
+    animation: glow 1.7s infinite alternate;
+}
+
+.present {
+    animation: glow 1.3s infinite alternate;
+}
+
+.future {
+    animation: glow 1.5s infinite alternate;
+}
+
 
 
 /* ------ making first card flip ------ */
@@ -176,21 +187,33 @@ h2 {
     position: absolute;
     height: 41.7vw;
     width: 24vw;
-    backface-visibility: hidden;
     border-radius: .5rem;
+    backface-visibility: hidden;
 }
 
-
-
 /* ------ Info for each card ------ */
-.printCardInfo {
+/* .printCardInfo {
     display: flex;
     flex-direction: column;
     margin: 5vw 0;
-}
+} */
 
 .info {
-    padding: 1.2vw 5vw;
+    display: block;
+    height: auto;
+    min-height: 41.7vw;
+    width: 24vw;
+    border-radius: .5rem;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.info:active {
+    opacity: 1;
 }
 
 
@@ -224,7 +247,7 @@ h2 {
         font-size: 3vw;
     }
 
-    .printCardInfo {
+    /* .printCardInfo {
         display: flex;
         flex-direction: row;
         text-align: center;
@@ -236,7 +259,7 @@ h2 {
 
     .printCardInfo div {
         margin: 2vw 0;
-    }
+    } */
 
 }
 
@@ -285,5 +308,10 @@ h2 {
     .desktop {
         display: block;
     }
+    
+    .info:hover {
+        opacity: 1;
+    }
+    
 
 }

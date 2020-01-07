@@ -125,7 +125,7 @@ async function showCards() {
                 cardName.innerHTML = `Card: ${getCardInfo.name} reversed`
                 cardMeaning.innerHTML = `Interpretation: ${getCardInfo.meaning_rev}`
                 cardImage.src = getCardInfo.image
-                cardImage.setAttribute('style', 'transform:rotate(180deg);')
+                cardImage.setAttribute('style', 'transform:rotateX(180deg);')
             }
 
             cardInfo[i].append(cardName)
