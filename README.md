@@ -29,11 +29,11 @@
 - Full RWS description of card, not just meanings - DONE
 - Add reverse-meanings - DONE
 - Add "library" of cards user can look through - DONE
-- Add search bar so user can search for a specific card
-- Use local storage to store readings
 - Move card info to display layered on top of flipped cards instead of underneath (tooltip? image hover overlay?) - DONE
 - Make JS DRYer so I don't have the same code repeated for each card - DONE
-- Add "advice" page to help people understand tarot
+- Add "advice" page to help people understand tarot - DONE
+- Add search bar or links so user can search for a specific card
+- Use local storage to store readings
 
 ## Goals:
 |  Day | Deliverable | Status
