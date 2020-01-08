@@ -71,6 +71,29 @@ h1 { /* title */
     box-shadow: 0 0 5px rgb(255, 30, 60), 0 0 15px rgb(255, 30, 60), 0 0 25px black, 0 0 50px black, 0 0 75px black;
 }
 
+ul {
+    list-style-type: none;
+    list-style-position: inside;
+    margin-left: -16px;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    height: 17px;
+    width: 85px;
+    margin: 2px;
+    padding: 2px;
+    padding-bottom: 8px;
+    background-color: rgba(30, 42, 51, 0.8);
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+
 h3 { /* card names */
     background-color: transparent;
     text-align: center;
