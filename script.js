@@ -176,14 +176,19 @@ showCards()
 
 
 // learned how to make card flip on click from https://codepen.io/AdamTheWizard/pen/QVgLLR
+
+const mobileCard = document.querySelectorAll(".mobileInfo")
+
+console.log(mobileCard)
+
 card.forEach(item => {
     item.addEventListener("click", function() {
         if (item.classList.contains("isFlipped")) {
         } else {
             item.classList.add("isFlipped")
-            // let mobileCard = document.querySelectorAll(".hide")
             // mobileCard.classlist.remove("hide")
         }  
     })
 })
+
 
