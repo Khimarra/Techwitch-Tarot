@@ -91,11 +91,9 @@ async function showCards() {
         ]
 
         for (i = 0; i < getCards.length; i++) {
+            
             getCards[i].image = imageArray[i]
-        }
 
-        for (i = 0; i < getCards.length; i++) {
-            let linksSection = document.querySelector('.links')
             let cardSection = document.querySelector('.spread')
 
             let cardName = document.createElement('h3')
@@ -106,10 +104,6 @@ async function showCards() {
             let image = document.createElement('img')
             image.src = getCards[i].image
             cardSection.append(image)
-
-            let cardLink = document.createElement('li')
-            cardLink.innerHTML = `<a href="cards.html#${i}">${getCards[i].name}</a>`
-            linksSection.append(cardLink)
 
             let cardDescription = document.createElement('h4')
             cardDescription.innerHTML = `${getCards[i].desc}`
@@ -124,6 +118,22 @@ async function showCards() {
             cardSection.append(cardMeaningDown)
 
         }
+
+
+// ------ Links to Major Arcana
+        for (i = 0; i < 22; i++) {
+
+            let linksSection = document.querySelector('.major')
+            let cardLink = document.createElement('li')
+            cardLink.innerHTML = `<a href="cards.html#${i}">${getCards[i].name}</a>`
+            linksSection.append(cardLink)
+
+
+        }
+
+        console.log(getCards)
+
+
 
     } catch(err) {
         console.log(`Oops! Error occurred! ${err}`)
