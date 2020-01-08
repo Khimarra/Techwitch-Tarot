@@ -91,7 +91,7 @@ h4 {
     color: rgb(255, 244, 209);
     text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71);
     font-size: 4vw;
-    margin-bottom: 20vw;
+    margin-bottom: 10vw;
 }
 
 h5 {
@@ -313,6 +313,29 @@ footer a {
         font-size: 2.5vw;
     }
 
+    .cardContainer, .card, .up img {
+        height: 31.275vw;
+        width: 18vw;
+    }
+    
+    .down {
+        background-size: cover;
+        height: 31.275vw;
+        width: 18vw;
+    }
+    
+    .isFlipped {
+        transform: rotateY(180deg);
+    }
+    
+    .cardFace {
+        position: absolute;
+        height: 31.275vw;
+        width: 18vw;
+        border-radius: .5rem;
+        backface-visibility: hidden;
+    }
+
     .card:hover {
         transform: rotateY(-30deg);
     } /* this tilts the card prior to flipping */    
@@ -330,6 +353,9 @@ footer a {
     }
 
     .info {
+        height: auto;
+        min-height: 31.275vw;
+        width: 18vw;
         font-size: 1.4vw;
     }
     
