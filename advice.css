@@ -96,18 +96,24 @@ h5 {
 }
 
 footer {
+    text-align: center;
     padding-top: 5vw;
     padding-bottom: 3vw;
 }
 
-footer h5 {
+h5 { /* footer text */
+    background-color: transparent;
+    color: rgb(255, 244, 209);
+    text-shadow: 0 0 2px rgb(255, 244, 209), 0 0 5px #ce2dff, 0 0 10px black;
     font-size: 3vw;
-    text-shadow: 0 0 2px black, 0 0 5px black, 0 0 10px black;
+    margin: 0;
+    padding: 0 5vw;
 }
 
 footer a {
     text-decoration: none;
     color: rgb(255, 30, 60);
+    text-shadow: 0 0 2px rgb(255, 30, 60), 0 0 5px #ce2dff, 0 0 10px black;
 }
 
 
