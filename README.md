@@ -1,9 +1,11 @@
-# Techwitch-Tarot
+# Techwitch Tarot
+
+### _(AKA TaraTaroT)_
 
 #### Note: first commits were directly through github as I edited README.md. First commit via git (with the specific git commit statement) was actually the 12th commit.
 
 ## App Description:
-#### An online tarot reader. Users can open the page and be provided with a basic 3-card spread with associated card meanings.
+#### An online tarot (tarat) reader. Users can open the page and be provided with a basic 3-card spread with associated card meanings.
 
 ## API: 
 <https://rws-cards-api.herokuapp.com/>
