@@ -1,6 +1,4 @@
-const deckUrl = 'https://rws-cards-api.herokuapp.com/api/v1/cards'
-
-const reverseDeckUrl = 'https://rws-cards-api.herokuapp.com/api/v1/cards/search?meaning=difficult'
+const deckUrl = 'https://cors-anywhere.herokuapp.com/https://rws-cards-api.herokuapp.com/api/v1/cards'
 
 const card = document.querySelectorAll('.card')
 
