@@ -106,6 +106,6 @@ This is my main card randomizing logic. I was able to make this work for any car
 ```
 
 ## Change Log
--Moved the card animation to MVP because the HTML structure would have been very different otherwise, making it much harder to implement after the fact.
--Changed layout from initial wireframe ever so slightly, making card info display on top of cards now, instead of below them on the page.
--I decided to make links in the card index page instead of a search bar because it will be easier for people to find what they're looking for without having to guess at the specific wording of each card name (because it can vary a bit from one deck to the next)
+- Moved the card animation to MVP because the HTML structure would have been very different otherwise, making it much harder to implement after the fact.
+- Changed layout from initial wireframe ever so slightly, making card info display on top of cards now, instead of below them on the page.
+- I decided to make links in the card index page instead of a search bar because it will be easier for people to find what they're looking for without having to guess at the specific wording of each card name (because it can vary a bit from one deck to the next)
