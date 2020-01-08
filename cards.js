@@ -131,6 +131,54 @@ async function showCards() {
 
         }
 
+        // ------ Links to Wands
+        for (i = 22; i < 36; i++) {
+
+            let linksSection = document.querySelector('.wands')
+            let cardLink = document.createElement('li')
+            cardLink.innerHTML = `<a href="cards.html#${i}">${getCards[i].name}</a>`
+            linksSection.append(cardLink)
+
+
+        }
+
+        // ------ Links to Cups
+        for (i = 36; i < 50; i++) {
+
+            let linksSection = document.querySelector('.cups')
+            let cardLink = document.createElement('li')
+            cardLink.innerHTML = `<a href="cards.html#${i}">${getCards[i].name}</a>`
+            linksSection.append(cardLink)
+
+
+        }
+
+        // ------ Links to Pentacles
+        for (i = 50; i < 64; i++) {
+
+            let linksSection = document.querySelector('.pentacles')
+            let cardLink = document.createElement('li')
+            cardLink.innerHTML = `<a href="cards.html#${i}">${getCards[i].name}</a>`
+            linksSection.append(cardLink)
+
+
+        }
+
+        // ------ Links to Swords
+        for (i = 64; i < 78; i++) {
+
+            let linksSection = document.querySelector('.swords')
+            let cardLink = document.createElement('li')
+            cardLink.innerHTML = `<a href="cards.html#${i}">${getCards[i].name}</a>`
+            linksSection.append(cardLink)
+
+
+        }
+
+
+
+
+
         console.log(getCards)
 
 
