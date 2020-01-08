@@ -103,18 +103,20 @@ async function showCards() {
         card.forEach((item, i) => {
 
             let getCardInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
+            let cardIndex = getCards.indexOf(getCardInfo)
 
             // for desktop hover display
             let desktopInfo = document.querySelectorAll('.desktopInfo')
             desktopInfo.innerHTML = ''
+            let desktopCardName = document.createElement('div')
+            let desktopCardMeaning = document.createElement('div')
 
             // for mobile print display
             let mobileInfo = document.querySelectorAll('.mobileInfo')
             mobileInfo.innerHTML = ''
+            let mobileCardName = document.createElement('div')
+            let mobileCardMeaning = document.createElement('div')
 
-            let cardIndex = getCards.indexOf(getCardInfo)
-            let desktopCardName = document.createElement('div')
-            let cardMeaning = document.createElement('div')
             let cardImage = document.createElement('img')
 
             
@@ -122,22 +124,34 @@ async function showCards() {
                 return (Math.floor(Math.random() * 2))
             }
             
+
+            // randomize between upright and reversed cards
             if (cardDirection() === 0) {
                 desktopCardName.innerHTML = `Card: ${getCardInfo.name}`
-                cardMeaning.innerHTML = `Interpretation: ${getCardInfo.meaning_up}`
+                desktopCardMeaning.innerHTML = `Interpretation: ${getCardInfo.meaning_up}`
+
+                mobileCardName.innerHTML = `Card: ${getCardInfo.name}`
+                mobileCardMeaning.innerHTML = `Interpretation: ${getCardInfo.meaning_up}`
+
                 cardImage.src = getCardInfo.image
+
             } else {
                 desktopCardName.innerHTML = `Card: ${getCardInfo.name} reversed`
-                cardMeaning.innerHTML = `Interpretation: ${getCardInfo.meaning_rev}`
+                desktopCardMeaning.innerHTML = `Interpretation: ${getCardInfo.meaning_rev}`
+
+                mobileCardName.innerHTML = `Card: ${getCardInfo.name} reversed`
+                mobileCardMeaning.innerHTML = `Interpretation: ${getCardInfo.meaning_rev}`
+
                 cardImage.src = getCardInfo.image
                 cardImage.setAttribute('style', 'transform:rotateX(180deg);')
+
             }
 
             desktopInfo[i].append(desktopCardName)
-            desktopInfo[i].append(cardMeaning)
+            desktopInfo[i].append(desktopCardMeaning)
 
-            // mobileInfo[i].append(cardName)
-            // mobileInfo[i].append(cardMeaning)
+            mobileInfo[i].append(mobileCardName)
+            mobileInfo[i].append(mobileCardMeaning)
 
             imageContainers[i].append(cardImage)
 
