@@ -95,14 +95,21 @@ async function showCards() {
         }
 
         for (i = 0; i < getCards.length; i++) {
+            let linksSection = document.querySelector('.links')
             let cardSection = document.querySelector('.spread')
+
+            let cardName = document.createElement('h3')
+            cardName.innerHTML = `${getCards[i].name}`
+            cardName.id = i
+            cardSection.append(cardName)
+
             let image = document.createElement('img')
             image.src = getCards[i].image
             cardSection.append(image)
 
-            let cardName = document.createElement('h3')
-            cardName.innerHTML = `${getCards[i].name}`
-            cardSection.append(cardName)
+            let cardLink = document.createElement('li')
+            cardLink.innerHTML = `<a href="cards.html#${i}">${getCards[i].name}</a>`
+            linksSection.append(cardLink)
 
             let cardDescription = document.createElement('h4')
             cardDescription.innerHTML = `${getCards[i].desc}`

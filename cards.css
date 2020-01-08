@@ -7,6 +7,8 @@ body {
     padding: none;
 }
 
+/* ------ Header Section ------ */
+
 header {
     text-align: center;
     height: 35vw;
@@ -37,7 +39,7 @@ nav a {
     color: rgba(255, 255, 255, 0.8);
 }
 
-h1 {
+h1 { /* title */
     font-size: 10vw;
     margin: 0;
     padding-top: 1vw;
@@ -55,6 +57,10 @@ h1 {
     }
 }
 
+
+
+/* ------ Spread Section ------ */
+
 .spread {
     display: flex;
     flex-direction: column;
@@ -65,26 +71,26 @@ h1 {
     box-shadow: 0 0 5px rgb(255, 30, 60), 0 0 15px rgb(255, 30, 60), 0 0 25px black, 0 0 50px black, 0 0 75px black;
 }
 
+h3 { /* card names */
+    background-color: transparent;
+    text-align: center;
+    color: rgb(255, 244, 209);
+    text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71);
+    font-size: 7vw;
+    margin-top: 10vw;
+}
+
 img {
     display: block;
     background-color: #0e364d;
     width: 90%;
     height: auto;
-    margin-top: 10vw;
     border-radius: 2vw;
     align-content: center;
     box-shadow: 0 0 2vw black;
 }
 
-h3 {
-    background-color: transparent;
-    text-align: center;
-    color: rgb(255, 244, 209);
-    text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71);
-    font-size: 5vw;
-}
-
-h4 {
+h4 { /* card info */
     background-color: transparent;
     color: rgb(255, 244, 209);
     text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71);
@@ -94,24 +100,18 @@ h4 {
     border-bottom: rgb(255, 244, 209);
 }
 
-h5 {
-    background-color: transparent;
-    color: rgb(255, 244, 209);
-    text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71);
-    font-size: 3vw;
-    margin: 0;
-    padding: 0 5vw;
-
-}
-
 footer {
     padding-top: 5vw;
     padding-bottom: 3vw;
 }
 
-footer h5 {
-    font-size: 3vw;
+h5 { /* footer text */
+    background-color: transparent;
+    color: rgb(255, 244, 209);
     text-shadow: 0 0 2px black, 0 0 5px black, 0 0 10px black;
+    font-size: 3vw;
+    margin: 0;
+    padding: 0 5vw;
 }
 
 footer a {
@@ -122,6 +122,7 @@ footer a {
 
 
 /* ------ Tablets ------ */
+
 @media only screen and (min-width: 600px) {
 
     header {
@@ -137,12 +138,16 @@ footer a {
         height: auto;
     }
 
-    h3 {
-        font-size: 4vw;
+    h3 { /* card names */
+        font-size: 5vw;
     }
 
-    h4 {
+    h4 { /* card info */
         font-size: 2vw;
+    }
+
+    h5 {
+        font-size: 1.8vw;
     }
 
 }
@@ -150,6 +155,7 @@ footer a {
 
 
 /* ------ Desktop ------ */
+
 @media only screen and (min-width: 900px) {
 
     nav {
@@ -167,16 +173,16 @@ footer a {
         border-radius: 1vw;
     }
 
-    h3 {
+    h3 { /* card names */
         font-size: 2vw;
     }
 
-    h4 {
+    h4 { /* card info */
         font-size: 1.4vw;
         align-self: flex-start;
     }
 
-    footer h5 {
+    h5 { /* footer text */
         font-size: 1.2vw;
     }   
 
