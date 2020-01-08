@@ -71,10 +71,20 @@ h1 { /* title */
     box-shadow: 0 0 5px rgb(255, 30, 60), 0 0 15px rgb(255, 30, 60), 0 0 25px black, 0 0 50px black, 0 0 75px black;
 }
 
+h2 {
+    background-color: transparent;
+    text-align: center;
+    color: rgb(255, 244, 209);
+    text-shadow: 0 0 5px rgb(255, 244, 209), 0 0 10px #ce2dff, 0 0 15px #ce2dff, 0 0 25px rgb(255, 243, 71), 0 0 40px rgb(255, 243, 71);
+    font-size: 5vw;
+}
+
 ul {
     list-style-type: none;
-    list-style-position: inside;
-    margin-left: -16px;
+    padding: 0;
+    width: auto;
+    max-width: 90vw;
+    text-align: center;
 }
 
 li {
@@ -86,6 +96,7 @@ li {
     padding: 2px;
     padding-bottom: 8px;
     background-color: rgba(30, 42, 51, 0.8);
+    border-radius: 5px;
 }
 
 li a {
@@ -101,6 +112,10 @@ h3 { /* card names */
     text-shadow: 0 0 5px #ce2dff, 0 0 10px rgb(255, 243, 71), 0 0 15px rgb(255, 243, 71);
     font-size: 7vw;
     margin-top: 10vw;
+}
+
+ul h3 {
+    margin-top: 1vw;
 }
 
 img {
@@ -156,6 +171,10 @@ footer a {
         font-size: 7vw;
     }
 
+    h2 {
+        font-size: 4vw;
+    }
+
     img {
         width: 40%;
         height: auto;
@@ -169,7 +188,7 @@ footer a {
         font-size: 2vw;
     }
 
-    h5 {
+    h5 { /* footer text */
         font-size: 1.8vw;
     }
 
@@ -190,6 +209,14 @@ footer a {
         font-size: 1.7vw;
     }
 
+    h2 {
+        font-size: 2vw;
+    }
+
+    ul {
+        width: 50vw;
+    }
+
     img {
         width: 20%;
         height: auto;
@@ -201,7 +228,10 @@ footer a {
     }
 
     h4 { /* card info */
+        display: inline-block;
         font-size: 1.4vw;
+        width: 70vw;
+        margin: 1vw 10vw;
         align-self: flex-start;
     }
 
