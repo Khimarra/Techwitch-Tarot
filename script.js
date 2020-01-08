@@ -2,7 +2,7 @@ const deckUrl = 'https://cors-anywhere.herokuapp.com/https://rws-cards-api.herok
 
 const card = document.querySelectorAll('.card')
 
-const cardText = document.querySelectorAll('.info')
+// const cardText = document.querySelectorAll('.desktopInfo')
 
 const imageContainers = document.querySelectorAll('.up')
 
@@ -100,13 +100,20 @@ async function showCards() {
         }
 
 
-        cardText.forEach((item, i) => {
+        card.forEach((item, i) => {
 
             let getCardInfo = getCards[Math.floor(Math.random() * Math.floor(totalCards))]
-            let cardInfo = document.querySelectorAll('.info')
-            cardInfo.innerHTML = ''
+
+            // for desktop hover display
+            let desktopInfo = document.querySelectorAll('.desktopInfo')
+            desktopInfo.innerHTML = ''
+
+            // for mobile print display
+            let mobileInfo = document.querySelectorAll('.mobileInfo')
+            mobileInfo.innerHTML = ''
+
             let cardIndex = getCards.indexOf(getCardInfo)
-            let cardName = document.createElement('div')
+            let desktopCardName = document.createElement('div')
             let cardMeaning = document.createElement('div')
             let cardImage = document.createElement('img')
 
@@ -116,18 +123,22 @@ async function showCards() {
             }
             
             if (cardDirection() === 0) {
-                cardName.innerHTML = `Card: ${getCardInfo.name}`
+                desktopCardName.innerHTML = `Card: ${getCardInfo.name}`
                 cardMeaning.innerHTML = `Interpretation: ${getCardInfo.meaning_up}`
                 cardImage.src = getCardInfo.image
             } else {
-                cardName.innerHTML = `Card: ${getCardInfo.name} reversed`
+                desktopCardName.innerHTML = `Card: ${getCardInfo.name} reversed`
                 cardMeaning.innerHTML = `Interpretation: ${getCardInfo.meaning_rev}`
                 cardImage.src = getCardInfo.image
                 cardImage.setAttribute('style', 'transform:rotateX(180deg);')
             }
 
-            cardInfo[i].append(cardName)
-            cardInfo[i].append(cardMeaning)
+            desktopInfo[i].append(desktopCardName)
+            desktopInfo[i].append(cardMeaning)
+
+            // mobileInfo[i].append(cardName)
+            // mobileInfo[i].append(cardMeaning)
+
             imageContainers[i].append(cardImage)
 
             delete getCards[cardIndex]
@@ -152,10 +163,12 @@ showCards()
 
 // learned how to make card flip on click from https://codepen.io/AdamTheWizard/pen/QVgLLR
 card.forEach(item => {
-    item.addEventListener('click', function() {
+    item.addEventListener("click", function() {
         if (item.classList.contains("isFlipped")) {
         } else {
             item.classList.add("isFlipped")
+            // let mobileCard = document.querySelectorAll(".hide")
+            // mobileCard.classlist.remove("hide")
         }  
     })
 })
