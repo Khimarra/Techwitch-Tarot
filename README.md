@@ -34,7 +34,8 @@
 - Move card info to display layered on top of flipped cards instead of underneath (tooltip? image hover overlay?) - DONE
 - Make JS DRYer so I don't have the same code repeated for each card - DONE
 - Add "advice" page to help people understand tarot - DONE
-- Add search bar or links so user can search for a specific card
+- Add search bar or links so user can search for a specific card - DONE
+- Add multiple tarot spreads
 - Use local storage to store readings
 
 ## Goals:
@@ -63,6 +64,7 @@
 | Adding additional card info | M | 3hrs | .5hrs | 0hrs |
 | Adding card library | M | 5hrs | 3hrs | 0hrs |
 | Adding search bar/card links | L | 3hrs | 1hrs | 0hrs |
+| Adding multiple spreads | L | 0hrs | 1hrs | 0hrs |
 | Total | H | 37hrs| 42hrs | 0hrs |
 
 ## Code Snippet
