@@ -2,6 +2,8 @@
 
 ### _(AKA TaraTaroT)_
 
+<https://pages.git.generalassemb.ly/Khimarra/Techwitch-Tarot/>
+
 #### Note: first commits were directly through github as I edited README.md. First commit via git (with the specific git commit statement) was actually the 12th commit.
 
 ## App Description:
@@ -55,17 +57,17 @@
 ## Timeframes:
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Building HTML | H | 4hrs | 4hrs | 0hrs |
-| Working with API | H | 4hrs | 3hrs | 0hrs |
-| Adding card images | H | 5hrs | 7hrs | 0hrs |
-| Styling with 2+ media queries | H | 6hrs | 20hrs | 0hrs |
+| Building HTML | H | 4hrs | 4hrs | 4hrs |
+| Working with API | H | 4hrs | 3hrs | 3hrs |
+| Adding card images | H | 5hrs | 7hrs | 7hrs |
+| Styling with 2+ media queries | H | 6hrs | 20hrs | 20hrs |
 | Adding local storage | M | 2hrs | 0hrs | 0hrs |
-| Card flip animation | M | 5hrs? | 2.5hrs | 0hrs |
-| Adding additional card info | M | 3hrs | .5hrs | 0hrs |
-| Adding card library | M | 5hrs | 3hrs | 0hrs |
-| Adding search bar/card links | L | 3hrs | 1hrs | 0hrs |
-| Adding multiple spreads | L | 0hrs | 1hrs | 0hrs |
-| Total | H | 37hrs| 42hrs | 0hrs |
+| Card flip animation | M | 5hrs? | 2.5hrs | 2.5hrs |
+| Adding additional card info | M | 3hrs | .5hrs | .5hrs |
+| Adding card library | M | 5hrs | 3hrs | 3hrs |
+| Adding search bar/card links | L | 3hrs | 1hrs | 1hrs |
+| Adding multiple spreads | L | 0hrs | 1hrs | 1hrs |
+| Total | H | 37hrs| 42hrs | 42hrs |
 
 ## Code Snippet
 
