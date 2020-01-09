@@ -66,6 +66,8 @@ p {
 
 
 
+
+
 /* ------ Tarot Spread ------ */
 .spread {
     height: auto;
@@ -73,6 +75,11 @@ p {
     background-image: url("images/ClothBackground.jpg");
     margin: -5vw 0 0 0;
     box-shadow: 0 0 5px rgb(255, 30, 60), 0 0 15px rgb(255, 30, 60), 0 0 25px black, 0 0 50px black, 0 0 75px black;
+}
+
+h2 {
+    text-align: center;
+    width: 25%;
 }
 
 /* instructions */
