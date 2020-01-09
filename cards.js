@@ -115,10 +115,16 @@ async function showCards() {
             cardMeaningDown.innerHTML = `Reverse Meaning: ${getCards[i].meaning_rev}`
             cardSection.append(cardMeaningDown)
 
+            // let linkToTop = document.querySelector('.title')
+            let titleLink = document.createElement('h3')
+            titleLink.innerHTML = `<a class='titleLink' href="cards.html#title">Back to top</a>`
+            cardSection.append(titleLink)
+
+
         }
 
 
-// ------ Links to Major Arcana
+        // ------ Links to Major Arcana
         for (i = 0; i < 22; i++) {
 
             let linksSection = document.querySelector('.major')

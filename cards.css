@@ -11,7 +11,7 @@ body {
 
 header {
     text-align: center;
-    height: 35vw;
+    height: 45vw;
     background-image: url("images/tarot-stock.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,6 +79,7 @@ h2 {
     font-size: 5vw;
 }
 
+/* links to cards */
 ul {
     list-style-type: none;
     padding: 0;
@@ -138,6 +139,21 @@ h4 { /* card info */
     border-bottom: rgb(255, 244, 209);
 }
 
+.titleLink { /* link to top of page */
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    height: 17px;
+    width: 85px;
+    margin: 2px;
+    padding: 6px;
+    background-color: rgba(30, 42, 51, 0.8);
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+
 footer {
     text-align: center;
     padding-top: 5vw;
@@ -166,7 +182,7 @@ footer a {
 @media only screen and (min-width: 600px) {
 
     header {
-        height: 27vw;
+        height: 37vw;
     }
 
     h1 {
@@ -202,6 +218,10 @@ footer a {
 
 @media only screen and (min-width: 900px) {
 
+    header {
+        height: 28vw;
+    }
+
     nav {
         height: 4vw;
         padding: 0 20vw;
@@ -236,6 +256,12 @@ footer a {
         margin: 1vw 10vw;
         align-self: flex-start;
     }
+
+    .titleLink { /* link to top of page */
+        align-content: center;
+        display: flex;
+        justify-content: center;    
+    }    
 
     h5 { /* footer text */
         font-size: 1.2vw;

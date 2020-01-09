@@ -9,7 +9,7 @@ body {
 
 header {
     text-align: center;
-    height: 30vw;
+    height: 40vw;
     background-image: url("images/tarot-stock.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,6 +53,14 @@ h1 {
     to {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d2d, 0 0 30px #a02dff, 0 0 40px #a02dff, 0 0 50px #2db2ff, 0 0 75px #ffffff;
     }
+}
+
+h2 {
+    background-color: transparent;
+    text-align: center;
+    color: rgb(255, 244, 209);
+    text-shadow: 0 0 5px rgb(255, 244, 209), 0 0 10px #ce2dff, 0 0 15px #ce2dff, 0 0 25px rgb(255, 243, 71), 0 0 40px rgb(255, 243, 71);
+    font-size: 5vw;
 }
 
 .spread {
@@ -122,15 +130,19 @@ footer a {
 @media only screen and (min-width: 600px) {
 
     header {
-        height: 27vw;
+        height: 37vw;
     }
 
     h1 {
         font-size: 7vw;
     }
 
-    h3 {
+    h2 {
         font-size: 4vw;
+    }
+
+    h3 {
+        font-size: 3.5vw;
     }
 
     h4 {
@@ -148,6 +160,10 @@ footer a {
 /* ------ Desktop ------ */
 @media only screen and (min-width: 900px) {
 
+    header {
+        height: 27vw;
+    }
+
     nav {
         height: 4vw;
         padding: 0 20vw;
@@ -157,16 +173,20 @@ footer a {
         font-size: 1.7vw;
     }
 
-    h3 {
-        font-size: 2.5vw;
-    }
-
-    h4 {
+    h2 {
         font-size: 2vw;
     }
 
+    h3 {
+        font-size: 2vw;
+    }
+
+    h4 {
+        font-size: 1.4vw;
+    }
+
     h5 {
-        font-size: 1.7vw;
+        font-size: 1.2vw;
     }
 
     footer h5 {
